@@ -28,7 +28,7 @@ if os.path.isdir("public"):
     app.mount("/public", StaticFiles(directory="public"), name="public")
 
 # Load FAQ DB (40-disease multilingual json)
-FAQ_PATH = "faq_multilang.json"
+FAQ_PATH = "faq.json"
 FAQ = {}
 if os.path.exists(FAQ_PATH):
     with open(FAQ_PATH, "r", encoding="utf-8") as f:
