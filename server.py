@@ -42,7 +42,6 @@ GREET_KEYWORDS = {
 GREET_MESSAGE = {
     "en": (
         "👋 Hello! I'm *Medxai*, your whatsapp health assistant.\n\n"
-       
     ),
     "hi": (
         "👋 नमस्ते! मैं *MedXpert* हूँ, आपका ऑफ़लाइन स्वास्थ्य सहायक।\n\n"
@@ -60,7 +59,6 @@ FALLBACK_MESSAGE = {
     "en": (
         "I couldn't find an  answer for that.\n\n"
         "Searching the web.....\n"
-      
     ),
     "hi": (
         "मुझे इस प्रश्न का ऑफ़लाइन उत्तर नहीं मिला।\n\n"
@@ -83,38 +81,102 @@ class ChatMessage(BaseModel):
 
 def search_faq(text: str, lang: str = "en") -> str | None:
     """
-    Simple FAQ search on faq.json.
-    Works for questions like:
-      'what is dengue', 'symptoms of malaria', etc.
+    Search the disease JSON in faq.json.
+
+    Expected format of faq.json:
+
+    {
+      "dengue": {
+        "en": {
+          "what": "....",
+          "symptoms": [...],
+          "prevention": [...],
+          "remedies": [...]
+        },
+        "hi": { ... }
+      },
+      "malaria": { ... }
+    }
+
+    Steps:
+    1) Detect disease name mentioned in the user text.
+    2) Detect what user is asking: what / symptoms / prevention / remedies.
+    3) Return a nicely formatted string for WhatsApp.
     """
     if not FAQ or not text:
         return None
 
     q = text.lower().strip()
+    lang = lang if lang in SUPPORTED_LANGS else "en"
 
-    # try to match any key inside question
-    best_key = None
-    for key in FAQ.keys():
-        k = key.lower().strip()
-        if not k:
-            continue
-        if k == q or k in q or q in k:
-            best_key = key
+    # ---------- 1) detect disease ----------
+    disease_key = None
+    for d in FAQ.keys():
+        d_low = d.lower()
+        if d_low in q:
+            disease_key = d
             break
 
-    # second pass: token-based
-    if not best_key:
-        tokens = q.split()
-        for key in FAQ.keys():
-            k = key.lower().strip()
-            if any(t and t in k for t in tokens):
-                best_key = key
-                break
+    if not disease_key:
+        # no disease name matched
+        return None
 
-    if best_key:
-        entry = FAQ[best_key]
-        return entry.get(lang) or entry.get("en")
-    return None
+    disease_data = FAQ.get(disease_key, {})
+    lang_block = disease_data.get(lang) or disease_data.get("en")
+    if not lang_block:
+        return None
+
+    # ---------- 2) detect what user is asking (category) ----------
+    category = "what"   # default if nothing specific found
+
+    # English keywords
+    if any(w in q for w in ["symptom", "symptoms", "signs"]):
+        category = "symptoms"
+    elif any(w in q for w in ["prevent", "prevention", "avoid", "protection"]):
+        category = "prevention"
+    elif any(w in q for w in ["remedy", "remedies", "treat", "treatment", "cure"]):
+        category = "remedies"
+
+    # Hindi keywords
+    if any(w in q for w in ["लक्षण"]):
+        category = "symptoms"
+    elif any(w in q for w in ["बचाव", "रोकथाम"]):
+        category = "prevention"
+    elif any(w in q for w in ["उपचार", "इलाज"]):
+        category = "remedies"
+
+    data = lang_block.get(category)
+    if data is None:
+        # fallback to "what" if present
+        data = lang_block.get("what")
+        if data is None:
+            return None
+        category = "what"
+
+    # ---------- 3) format answer for WhatsApp ----------
+    title_map = {
+        "what": "About",
+        "symptoms": "Symptoms",
+        "prevention": "Prevention",
+        "remedies": "Remedies"
+    }
+
+    if lang == "hi":
+        title_map = {
+            "what": "क्या है",
+            "symptoms": "लक्षण",
+            "prevention": "बचाव",
+            "remedies": "उपचार / घरेलू उपाय"
+        }
+
+    heading = title_map.get(category, category.capitalize())
+    disease_title = disease_key.title()
+
+    if isinstance(data, list):
+        bullet_lines = "\n".join(f"• {item}" for item in data)
+        return f"*{disease_title} – {heading}*\n{bullet_lines}"
+    else:
+        return f"*{disease_title} – {heading}*\n{data}"
 
 
 def process_message(text: str, lang: str = "en") -> dict:
@@ -144,7 +206,7 @@ def process_message(text: str, lang: str = "en") -> dict:
                 "answer": GREET_MESSAGE.get(lang, GREET_MESSAGE["en"])
             }
 
-    # 1) FAQ (40-disease database)
+    # 1) FAQ (40-disease database using new JSON format)
     faq_answer = search_faq(text, lang)
     if faq_answer:
         return {"type": "faq", "answer": faq_answer}
@@ -168,7 +230,7 @@ def process_message(text: str, lang: str = "en") -> dict:
                 "answer": preventive_health.MODULES[key]
             }
 
-    # 4) Simple disease info module (if you have it)
+    # 4) Simple disease info module (if you still keep this separate)
     disease_info = diseases_multilang.find_disease(text, lang)
     if disease_info:
         return {"type": "disease", "answer": disease_info}
