@@ -1,9 +1,5 @@
-# server.py
-# MedXpert offline bot + WhatsApp integration
-# Run locally: uvicorn server:app --reload --port 3000
-
 from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.responses import JSONResponse, HTMLResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import json
@@ -15,7 +11,7 @@ load_dotenv()
 # Twilio for WhatsApp replies
 from twilio.twiml.messaging_response import MessagingResponse
 
-# Local modules (you already have these)
+# Local modules
 import vaccinations
 import preventive_health
 import diseases_multilang
@@ -34,6 +30,49 @@ if os.path.exists(FAQ_PATH):
     with open(FAQ_PATH, "r", encoding="utf-8") as f:
         FAQ = json.load(f)
 
+# --------- language + greeting texts ----------
+
+SUPPORTED_LANGS = {"en", "hi"}   # add more later if needed
+
+GREET_KEYWORDS = {
+    "en": ["hi", "hello", "hey", "hai"],
+    "hi": ["namaste", "namaskar", "namasthe", "नमस्ते", "नमस्कार"],
+}
+
+GREET_MESSAGE = {
+    "en": (
+        "👋 Hello! I'm *Medxai*, your offline health assistant.\n\n"
+       
+    ),
+    "hi": (
+        "👋 नमस्ते! मैं *MedXpert* हूँ, आपका ऑफ़लाइन स्वास्थ्य सहायक।\n\n"
+        "आप ऐसे सवाल पूछ सकते हैं:\n"
+        "• डेंगू के लक्षण\n"
+        "• मलेरिया से बचाव कैसे करें\n"
+        "• शिशु / बच्चा / वयस्क / गर्भवती के टीकाकरण की सूची\n\n"
+        "किसी भाषा को चुनने के लिए आप ऐसे लिख सकते हैं:\n"
+        "`lang:hi डेंगू के लक्षण`\n\n"
+        "आपात स्थिति में तुरंत डॉक्टर या नज़दीकी अस्पताल से संपर्क करें।"
+    ),
+}
+
+FALLBACK_MESSAGE = {
+    "en": (
+        "I couldn't find an  answer for that.\n\n"
+        "Searching the web.....\n"
+      
+    ),
+    "hi": (
+        "मुझे इस प्रश्न का ऑफ़लाइन उत्तर नहीं मिला।\n\n"
+        "आप इन विषयों पर पूछ सकते हैं:\n"
+        "• डेंगू / मलेरिया / टीबी के लक्षण\n"
+        "• मलेरिया / टाइफ़ॉइड से बचाव कैसे करें\n"
+        "• शिशु / बच्चा / वयस्क / गर्भवती के टीकाकरण की सूची\n\n"
+        "छाती में दर्द, तेज़ रक्तस्राव या सांस लेने में दिक्कत जैसी आपात स्थिति में "
+        "कृपया तुरंत डॉक्टर या अस्पताल से संपर्क करें।"
+    ),
+}
+
 
 class ChatMessage(BaseModel):
     message: str
@@ -44,7 +83,7 @@ class ChatMessage(BaseModel):
 
 def search_faq(text: str, lang: str = "en") -> str | None:
     """
-    Simple FAQ search on faq_multilang.json.
+    Simple FAQ search on faq.json.
     Works for questions like:
       'what is dengue', 'symptoms of malaria', etc.
     """
@@ -86,13 +125,24 @@ def process_message(text: str, lang: str = "en") -> dict:
     """
     text = (text or "").strip()
     lang = (lang or "en").lower()
+    if lang not in SUPPORTED_LANGS:
+        lang = "en"
+
     lower = text.lower()
 
     if not text:
         return {
             "type": "fallback",
-            "answer": "Please type a health question, like 'what is dengue?' or 'symptoms of malaria'."
+            "answer": GREET_MESSAGE.get(lang, GREET_MESSAGE["en"])
         }
+
+    # 0) Greetings (hi, hello, namaste, etc.)
+    for g in GREET_KEYWORDS.get(lang, []):
+        if lower == g or lower.startswith(g + " "):
+            return {
+                "type": "greeting",
+                "answer": GREET_MESSAGE.get(lang, GREET_MESSAGE["en"])
+            }
 
     # 1) FAQ (40-disease database)
     faq_answer = search_faq(text, lang)
@@ -100,7 +150,10 @@ def process_message(text: str, lang: str = "en") -> dict:
         return {"type": "faq", "answer": faq_answer}
 
     # 2) Vaccination schedule
-    if any(w in lower for w in ["vaccine", "vaccination", "vaccine schedule", "immunization"]):
+    if any(w in lower for w in [
+        "vaccine", "vaccination", "vaccine schedule", "immunization",
+        "टीका", "टीकाकरण"
+    ]):
         return {
             "type": "vaccination",
             "answer": "Here is the offline vaccination schedule (infant, child, adult, pregnant).",
@@ -121,15 +174,7 @@ def process_message(text: str, lang: str = "en") -> dict:
         return {"type": "disease", "answer": disease_info}
 
     # 5) Fallback
-    fallback_text = (
-        "I couldn't find an offline answer for that.\n\n"
-        "Try asking about:\n"
-        "• symptoms of dengue / malaria / TB\n"
-        "• how to prevent malaria / typhoid\n"
-        "• vaccination schedule for infant / child / adult / pregnant\n\n"
-        "For emergencies (chest pain, severe bleeding, breathing difficulty), "
-        "please contact a doctor or hospital immediately."
-    )
+    fallback_text = FALLBACK_MESSAGE.get(lang, FALLBACK_MESSAGE["en"])
     return {"type": "fallback", "answer": fallback_text}
 
 
@@ -163,19 +208,33 @@ def chat(msg: ChatMessage):
 async def whatsapp_webhook(request: Request):
     """
     Twilio will call this URL when someone sends a WhatsApp message.
-    We read 'Body', call process_message, and reply with TwiML XML.
+    We read 'Body', parse optional lang prefix, call process_message,
+    and reply with TwiML XML.
     """
     form = await request.form()
-    body = (form.get("Body") or "").strip()
+    raw_body = (form.get("Body") or "").strip()
 
-    # later we can add multi-language via "lang:hi; question..."
     lang = "en"
+    text = raw_body
 
-    result = process_message(body, lang)
+    # Parse language prefix, e.g. "lang:hi डेंगू के लक्षण"
+    lower = raw_body.lower()
+    if lower.startswith("lang:"):
+        rest = raw_body[5:].lstrip()  # after "lang:"
+        if rest:
+            first = rest.split()[0]           # e.g. "hi" or "hi;..."
+            lang_code = first.split(";")[0].lower().strip()
+            if lang_code in SUPPORTED_LANGS:
+                lang = lang_code
+                text = rest[len(first):].lstrip(" ;,")
+            else:
+                lang = "en"
+                text = rest
+
+    result = process_message(text, lang)
     answer = result.get("answer") or "Sorry, something went wrong."
 
     resp = MessagingResponse()
-    msg = resp.message()
-    msg.body(answer)
+    resp.message(answer)
 
-    return HTMLResponse(str(resp), media_type="application/xml")
+    return PlainTextResponse(content=str(resp), media_type="application/xml")
