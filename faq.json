@@ -1,361 +1,1288 @@
+
 {
-  "covid": {
-    "en": "COVID-19 is a viral respiratory infection spread through droplets. Symptoms include fever, cough, tiredness, and breathing difficulty. Rest, hydration, and isolation help recovery.",
-    "hi": "COVID-19 एक वायरल संक्रमण है जो छींक या खांसी से फैलता है। बुखार, खांसी, थकान और सांस की तकलीफ इसके लक्षण हैं। आराम और पानी जरूरी हैं।",
-    "ta": "COVID-19 என்பது துளிகளിലൂടെ பரவும் மூச்சுத் தொற்று. காய்ச்சல், இருமல், சோர்வு, சுவாச சிரமம் அறிகுறிகளாகும்.",
-    "te": "COVID-19 చినుకుల ద్వారా వ్యాపించే శ్వాసకోశ వైరస్. జ్వరం, దగ్గు, అలసట, శ్వాసలో ఇబ్బంది లక్షణాలు.",
-    "kn": "COVID-19 ಹನಿ ಕಣಗಳ ಮೂಲಕ ಹರಡುವ ಉಸಿರಾಟದ ಸೋಂಕು. ಜ್ವರ, ಕೆಮ್ಮು, ದಣಿವು, ಉಸಿರಾಟ ಕಷ್ಟ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.",
-    "ml": "COVID-19 ചുമ/തുമ്മൽ തുള്ളികളിലൂടെ പകരുന്ന ശ്വാസകോശ രോഗമാണ്. പനി, ചുമ, ക്ഷീണം, ശ്വാസതടസം ലക്ഷണങ്ങളാണ്."
-  },
-
-  "dengue": {
-    "en": "Dengue spreads through Aedes mosquitoes. Symptoms include high fever, joint pain, headache, and weakness. Avoid self-medication and stay hydrated.",
-    "hi": "डेंगू एडीज मच्छर से फैलता है। इसमें तेज बुखार, बदन दर्द, सिर दर्द और कमजोरी होती है। खुद दवा न लें और खूब पानी पिएं।",
-    "ta": "டெங்கீ ஏட்ஸ் கொசுவால் பரவும். அதிக காய்ச்சல், உடலுவலி, தலைவலி முக்கிய அறிகுறிகள்.",
-    "te": "డెంగీ ఏడీస్ దోమల ద్వారా వ్యాపిస్తుంది. అధిక జ్వరం, శరీర నొప్పులు, తల నొప్పి లక్షణాలు.",
-    "kn": "ಡೆಂಗೀ ಏಡಿಸ್ ಮಶಕದಿಂದ ಹರಡುತ್ತದೆ. ಹೆಚ್ಚು ಜ್ವರ, ದೇಹನೋವು, ತಲೆನೋವು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.",
-    "ml": "ഡെങ്കിപ്പനി എഡ്സ് കൊതുക് വഴി പകരുന്നു. ഉയർന്ന പനി, ശരീരവേദന, ക്ഷീണം ഉണ്ടാകും."
-  },
-
-  "malaria": {
-    "en": "Malaria spreads through Anopheles mosquitoes. Fever with chills, sweating, and body pain are common symptoms. Early treatment prevents complications.",
-    "hi": "मलेरिया एनाफिलीज़ मच्छर से फैलता है। बुखार, ठंड लगना और शरीर में दर्द इसके लक्षण हैं। समय पर इलाज जरूरी है।",
-    "ta": "மலேரியா அனோஃபிலிஸ் கொசுவால் பரவும். குளிர் நடுக்கத்துடன் காய்ச்சல் வரும்.",
-    "te": "మలేరియా అనోఫిలీస్ దోమల ద్వారా వస్తుంది. జ్వరం, వణుకు, చెమట ప్రధాన లక్షణాలు.",
-    "kn": "ಮಲೇರಿಯಾ ಅನೋಫಿಲಿಸ್ ಮಶಕದಿಂದ ಬರುತ್ತದೆ. ಜ್ವರ, ನಡುಕು, ಬೆವರು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.",
-    "ml": "മലേറിയ അനോഫിലിസ് കൊതുക് വഴി പകരുന്നു. പനി, വിറയൽ, വിയർപ്പു എന്നിവ ഉണ്ടായേക്കാം."
-  },
-
-  "tuberculosis": {
-    "en": "Tuberculosis (TB) mainly affects the lungs. Symptoms include long-lasting cough, fever, weight loss, and night sweats. Treatment is long but very effective.",
-    "hi": "टीबी फेफड़ों को प्रभावित करती है। लगातार खांसी, बुखार और वजन कम होना इसके लक्षण हैं। इलाज लंबा लेकिन प्रभावी होता है।",
-    "ta": "டி.பி. நுரையீரலைப் பாதிக்கும். நீண்டகால இருமல், காய்ச்சல், எடை குறைவு முக்கிய அறிகுறிகள்.",
-    "te": "టిబి ఊపిరితిత్తులను ప్రభావితం చేస్తుంది. దీర్ఘకాలిక దగ్గు, జ్వరం, బరువు తగ్గడం లక్షణాలు.",
-    "kn": "ಟಿ.ಬಿ. ಉಸಿರುಗಾಸುಗಳನ್ನು ಮುಖ್ಯವಾಗಿ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ. ದೀರ್ಘಕೆಮ್ಮು, ಜ್ವರ ಕಾಣಿಸುತ್ತದೆ.",
-    "ml": "ടി ബി പ്രധാനമായും ശ്വാസകോശത്തെ ബാധിക്കുന്നു. ദീർഘകാല ചുമ, പനി, ഭാരം കുറയൽ ലക്ഷണമാണ്."
-  },
-
-  "influenza": {
-    "en": "Influenza (flu) is a viral fever causing body aches, cough, cold, fever, and tiredness. Rest and fluids help recovery.",
-    "hi": "फ्लू एक वायरल बुखार है जिसमें शरीर दर्द, खांसी और थकान होती है। आराम से राहत मिलती है।",
-    "ta": "ஃப்ளூ ஒரு வைரஸ் காய்ச்சல். உடலுவலி, இருமல், சோர்வு போன்றவை ஏற்படும்.",
-    "te": "ఫ్లూ వైరల్ జ్వరం. శరీర నొప్పి, దగ్గు, అలసట కనిపిస్తాయి.",
-    "kn": "ಫ್ಲೂ ವೈರಲ್ ಜ್ವರ. ದೇಹನೋವು, ಜ್ವರ, ಕೆಮ್ಮು ಕಾಣಿಸಬಹುದು.",
-    "ml": "ഫ്ലൂ ഒരു വൈറസ് ജ്വരമാണ്. ശരീരവേദനയും ചുമയും പനിയും ഉണ്ടാകും."
-  },
-
-  "typhoid": {
-    "en": "Typhoid spreads through contaminated food or water. Symptoms include prolonged fever, stomach pain, and weakness. Maintain hygiene and avoid street food.",
-    "hi": "टाइफाइड गंदे पानी या दूषित भोजन से फैलता है। लंबे समय तक बुखार, पेट दर्द और कमजोरी इसके लक्षण हैं।",
-    "ta": "டைஃபாய்டு பாதிக்கப்பட்ட நீர்/உணவு மூலம் பரவும். நீண்டகால காய்ச்சல், வயிற்றுவலி ஏற்படும்.",
-    "te": "టైఫాయిడ్ కలుషిత నీరు/ఆహారం వల్ల వస్తుంది. దీర్ఘకాలిక జ్వరం, కడుపు నొప్పి లక్షణాలు.",
-    "kn": "ಟೈಫಾಯ್ಡ್ ಅಶುದ್ಧ ನೀರು/ಆಹಾರದಿಂದ ಬರುತ್ತದೆ. ದೀರ್ಘ ಜ್ವರ, ಹೊಟ್ಟೆನೋವು ಕಾಣಿಸಬಹುದು.",
-    "ml": "ടൈഫോയ്ഡ് മലിനജലം/ഭക്ഷണം മൂലം പകരുന്നു. ദീർഘകാല പനിയും വയറുവേദനയും ഉണ്ടാകും."
-  },
-
-  "cholera": {
-    "en": "Cholera causes sudden watery diarrhea and dehydration due to contaminated water. ORS and clean water are essential for recovery.",
-    "hi": "कालरा दूषित पानी से होता है। पानी जैसा दस्त और तेज निर्जलीकरण इसके लक्षण हैं। ओआरएस जरूरी है।",
-    "ta": "காலரா மாசான நீரால் ஏற்படும். நீர்க்கேழ்ச்சி, வயிற்றுப்போக்கு தீவிரமாக இருக்கும்.",
-    "te": "కాలరా కలుషిత నీటితో వస్తుంది. తీవ్రమైన డైరియా, డీహైడ్రేషన్ లక్షణాలు.",
-    "kn": "ಕಾಲೇರಾ ಅಶುದ್ಧ ನೀರಿನಿಂದ ಬರುತ್ತದೆ. ತೀವ್ರ ಜಲದೋಷ, ದೇಹದ ನೀರಿಳಿಕೆ ಕಾಣಿಸಬಹುದು.",
-    "ml": "കാലറ മലിനജലത്തിൽ നിന്ന് പകരുന്ന രോഗമാണ്. കടുത്ത വയറിളക്കം, ദേഹദാഹം ഉണ്ടാകും."
-  },
-
-  "chikungunya": {
-    "en": "Chikungunya spreads through Aedes mosquitoes. Severe joint pain, fever, and body stiffness are common. Recovery may take weeks.",
-    "hi": "चिकनगुनिया एडीज मच्छर से फैलता है। इसमें जोड़ो में तेज दर्द, बुखार और जकड़न होती है।",
-    "ta": "சிக்குன்குனியா ஏட்ஸ் கொசுவால் பரவும். கடுமையான மூட்டு வலி, காய்ச்சல் ஏற்படும்.",
-    "te": "చికున్‌గునియా ఏడీస్ దోమల ద్వారా వస్తుంది. తీవ్రమైన కీళ్ల నొప్పి, జ్వరం కనిపిస్తాయి.",
-    "kn": "ಚಿಕುಂಗುನಿಯಾ ಏಡಿಸ್ ಮಶಕದಿಂದ ಹರಡುತ್ತದೆ. ತೀವ್ರ ಸಂಧಿ ನೋವು, ಜ್ವರ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.",
-    "ml": "ചിക്കുന്‍ഗുനിയ എഡ്സ് കൊതുക് വഴി പകരുന്നു. ശക്തമായ സന്ധിവേദനയും പനിയും ഉണ്ടാകും."
-  },
-
-  "hepatitis_a": {
-    "en": "Hepatitis A spreads through contaminated food or water. Causes jaundice, fever, and stomach discomfort. Usually resolves with rest.",
-    "hi": "हेपेटाइटिस A दूषित पानी/भोजन से फैलता है। पीलिया, बुखार और पेट दर्द होते हैं।",
-    "ta": "ஹெபடைட்டிஸ் A மாசான தண்ணீர்/உணவு மூலம் பரவும். காமாலை, காய்ச்சல் ஏற்படும்.",
-    "te": "హెపటైటిస్ A కలుషిత నీరు/ఆహారం వల్ల వస్తుంది. పసుపుదనం, జ్వరం ఉంటుంది.",
-    "kn": "ಹೆಪಟೈಟಿಸ್ A ಅಶುದ್ಧ ಆಹಾರ/ನೀರಿನಿಂದ ಬರುತ್ತದೆ. ಕಾಮಲೆಯಾದರೂ ಜ್ವರ ಕಾಣಬಹುದು.",
-    "ml": "ഹെപ്പറ്റൈറ്റിസ് A മലിനജലം/ഭക്ഷണം മൂലം. കാമല, പനി എന്നിവ ഉണ്ടാകും."
-  },
-
-  "hepatitis_b": {
-    "en": "Hepatitis B spreads through blood or body fluids. Causes liver inflammation, fatigue, and jaundice. Vaccination can prevent it.",
-    "hi": "हेपेटाइटिस B खून या द्रव से फैलता है। यह लीवर को नुकसान पहुंचा सकता है। टीका उपलब्ध है।",
-    "ta": "ஹெபடைட்டிஸ் B இரத்தம்/உடல் திரவங்களால் பரவும். காமாலை, சோர்வு ஏற்படும்.",
-    "te": "హెపటైటిస్ B రక్తం లేదా శరీర ద్రవాల ద్వారా వస్తుంది. పసుపుదనం, అలసట లక్షణాలు.",
-    "kn": "ಹೆಪಟೈಟಿಸ್ B ರಕ್ತ/ದೇಹದ ದ್ರವಗಳಿಂದ ಹರಡುತ್ತದೆ. ಕಾಮಲೆಯಾದರೂ ದಣಿವು ಕಾಣಬಹುದು.",
-    "ml": "ഹെപ്പറ്റൈറ്റിസ് B രക്തം/ദേഹ ദ്രവങ്ങൾ വഴി പകരുന്നു. കരൾശേഷി കുറയാം."
-  }  ,
-  "hepatitis_c": {
-    "en": "Hepatitis C spreads through infected blood. It often shows no early symptoms but can cause chronic liver disease later. Early testing helps avoid complications.",
-    "hi": "हेपेटाइटिस C संक्रमित खून से फैलता है। शुरू में लक्षण नहीं दिखते पर बाद में लीवर को नुकसान पहुंच सकता है।",
-    "ta": "ஹெபடைட்டிஸ் C பாதிக்கப்பட்ட இரத்தத்தால் பரவும். ஆரம்பத்தில் அறிகுறிகள் தெரியாமல் இருப்பது வழக்கம்.",
-    "te": "హెపటైటిస్ C సంక్రమిత రక్తం ద్వారా వ్యాపిస్తుంది. ప్రారంభంలో ఎక్కువగా లక్షణాలు ఉండవు.",
-    "kn": "ಹೆಪಟೈಟಿಸ್ C ಸೋಂಕಿತ ರಕ್ತದಿಂದ ಹರಡುತ್ತದೆ. ಆರಂಭದಲ್ಲಿ ಲಕ್ಷಣಗಳು ಕಾಣದಿರಬಹುದು.",
-    "ml": "ഹെപ്പറ്റൈറ്റിസ് C രോഗബാധിതരക്തത്തിലൂടെ പകരുന്നു. ആദ്യം ലക്ഷണങ്ങൾ ഉണ്ടാകാതിരിക്കും."
-  },
-
-  "hiv": {
-    "en": "HIV weakens the immune system. Early symptoms include fever, tiredness, and weight loss. With treatment, people can live long and healthy lives.",
-    "hi": "एचआईवी प्रतिरक्षा प्रणाली को कमजोर करता है। शुरुआती लक्षणों में बुखार और थकान शामिल हैं। इलाज से सामान्य जीवन संभव है।",
-    "ta": "HIV நோய் எதிர்ப்பு சக்தியை குறைக்கிறது. சிகிச்சையுடன் சாதாரணமாக வாழலாம்.",
-    "te": "HIV రోగనిరోధక శక్తిని బలహీనపరుస్తుంది. చికిత్సతో ఆరోగ్యంగా జీవించవచ్చు.",
-    "kn": "HIV ರೋಗನಿರೋಧಕ ಶಕ್ತಿಯನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ. ಚಿಕಿತ್ಸೆಯಿಂದ ಸಾಮಾನ್ಯ ಜೀವನ ಸಾಧ್ಯ.",
-    "ml": "HIV പ്രതിരോധശേഷി കുറയ്ക്കുന്നു. ചികിത്സയോടെ സാധാരണ ജീവിതം സാധ്യമാണ്."
-  },
-
-  "measles": {
-    "en": "Measles spreads through the air. Symptoms include fever, cough, red eyes, and body rash. Vaccination is the best prevention.",
-    "hi": "खसरा हवा में फैलता है। बुखार, खांसी और शरीर पर लाल दाने होते हैं। टीका उपलब्ध है।",
-    "ta": "கசரா காற்றில் பரவும். காய்ச்சல், இருமல், தோலில் சுண்டைகள் காணப்படும்.",
-    "te": "ఖసరా గాలి ద్వారా వస్తుంది. జ్వరం, దగ్గు, చర్మంపై దద్దుర్లు కనిపిస్తాయి.",
-    "kn": "ಮೀಸಲ್ಸ್ ಗಾಳಿಯ ಮೂಲಕ ಹರಡುತ್ತದೆ. ಜ್ವರ, ಕೆಮ್ಮು, ಚರ್ಮದ ರೇಷ್ಮೆ ಕಾಣಿಸಬಹುದು.",
-    "ml": "ചാമപ്പനി വായുവിൽ പകരും. പനി, ചുമ, ചർമ്മരോഗം ഉണ്ടാകും."
-  },
-
-  "mumps": {
-    "en": "Mumps causes swelling near the jaw, fever, and pain while eating. It spreads through saliva. Vaccination prevents infection.",
-    "hi": "गलसुआ में जबड़े के पास सूजन, बुखार और दर्द होता है। लार से फैलता है।",
-    "ta": "மம்ப்ஸ் தாடை பகுதியில் வீக்கம், காய்ச்சல் ஏற்படும். உமிழ்நீரால் பரவும்.",
-    "te": "మంప్స్ దవడ దగ్గర వాపు, జ్వరం ఇస్తుంది. లాలాజలం ద్వారా వ్యాపిస్తుంది.",
-    "kn": "ಮಂಪ್ಸ್ ದವಡೆಯ ಬಳಿ ಊತ, ಜ್ವರ ಉಂಟುಮಾಡುತ್ತದೆ. ಲಾಲೆಯಿಂದ ಹರಡುತ್ತದೆ.",
-    "ml": "മംപ്സ് താടി ഭാഗത്ത് വീക്കം, പനി ഉണ്ടാക്കും. നാവുനീർ വഴി പകരും."
-  },
-
-  "chickenpox": {
-    "en": "Chickenpox causes itchy blisters, fever, and tiredness. It spreads easily from person to person. Rest and fluids help recovery.",
-    "hi": "चेचक में फफोले, बुखार और थकान होती है। यह जल्दी फैलता है।",
-    "ta": "சிக்கன் பாக்ஸ் அரிப்பு நிறைந்த புண்கள், காய்ச்சல் ஏற்படும்.",
-    "te": "చికెన్‌పాక్స్ దద్దుర్లు, జ్వరం, అలసట కలిగిస్తుంది.",
-    "kn": "ಚಿಕನ್‌ಪಾಕ್ಸ್ ಬುಬ್ಬುಳು, ಜ್ವರ, ದಣಿವು ಬಿಡಿಸುತ್ತದೆ.",
-    "ml": "ചിക്കൻപോക്സ് പനി, ചർമ്മബാധ ഉണ്ടാക്കും."
-  },
-
-  "jaundice": {
-    "en": "Jaundice makes the skin and eyes yellow due to liver problems. Symptoms include weakness, nausea, and dark urine. Avoid oily foods.",
-    "hi": "पीलिया में त्वचा और आंखें पीली हो जाती हैं। कमजोरी और मतली होती है।",
-    "ta": "காமாலை கல்லீரல் பிரச்சனையால் தோல் மஞ்சளாகும்.",
-    "te": "జాండిస్ వల్ల చర్మం పసుపు రంగులో మారుతుంది.",
-    "kn": "ಕಾಮಳೆ ಚರ್ಮ, ಕಣ್ಣು ಹಳದಿಯಾಗುತ್ತದೆ.",
-    "ml": "കാമലയിൽ ചർമ്മവും കണ്ണുകളും മഞ്ഞയായി മാറും."
-  },
-
-  "pneumonia": {
-    "en": "Pneumonia is a lung infection causing fever, chest pain, cough, and breathlessness. Children and elders are more at risk.",
-    "hi": "निमोनिया में फेफड़ों में संक्रमण होता है। बुखार, छाती दर्द और सांस की कमी होती है।",
-    "ta": "நிமோனியா நுரையீரல் தொற்று. காய்ச்சல், இருமல், மூச்சுத்திணறல் ஏற்படும்.",
-    "te": "న్యుమోనియా ఊపిరితిత్తుల ఇన్ఫెక్షన్. జ్వరం, దగ్గు, శ్వాసలో ఇబ్బంది వస్తుంది.",
-    "kn": "ನಿಮೋನಿಯಾ ಫೆಫ್ಸುಗಳ ಸೋಂಕು. ಜ್ವರ, ಎದೆನೋವು, ಉಸಿರಾಟ ಕಷ್ಟ ಕಾಣಿಸಬಹುದು.",
-    "ml": "ന്യൂമോണിയ ശ്വാസകോശ രോഗമാണ്. പനി, ചുമ, ശ്വാസതടസം ഉണ്ടാകും."
-  },
-
-  "diarrhea": {
-    "en": "Diarrhea causes loose stools and dehydration. ORS, clean water, and rest are essential. Avoid spicy and oily foods.",
-    "hi": "दस्त में पानी जैसा मल आता है और शरीर में पानी की कमी हो जाती है। ओआरएस जरूरी है।",
-    "ta": "வயிற்றுப்போக்கு நீர்க்கேழ்ச்சி, பலவீனம் உண்டாக்கும். ORS குடிக்க வேண்டும்.",
-    "te": "డైరియా వల్ల నీటి లోపం కలుగుతుంది. ORS తప్పనిసరి.",
-    "kn": "ಜಲದೋಷ ದೇಹದ ನೀರಿಳಿಕೆಗೆ ಕಾರಣ. ORS ಕುಡಿಯುವುದು ಅಗತ್ಯ.",
-    "ml": "വയറിളക്കം ദേഹദാഹം ഉണ്ടാക്കും. ORS കുടിക്കുക അത്യാവശ്യം."
-  },
-
-  "uti": {
-    "en": "UTI causes burning urination, lower stomach pain, and frequent urge to urinate. Drink plenty of water and avoid holding urine.",
-    "hi": "यूटीआई में पेशाब में जलन, पेट दर्द और बार-बार पेशाब जाना होता है। पानी ज्यादा पिएं।",
-    "ta": "UTI-யில் சிறுநீரில் எரிச்சல், கீழ்வயிறு வலி ஏற்படும்.",
-    "te": "UTIలో మూత్రంలో మంట, కడుపు నొప్పి కనిపిస్తుంది.",
-    "kn": "UTIಯಲ್ಲಿ ಮೂತ್ರದಲ್ಲಿ ಸುಡುವಿಕೆ, ಹೊಟ್ಟೆನೋವು ಕಾಣಿಸಬಹುದು.",
-    "ml": "UTI-യിൽ മൂത്രത്തിൽ കത്തിക്കൽ, വയറുവേദന ഉണ്ടാകും."
-  }  ,
-  "diabetes": {
-    "en": "Diabetes happens when blood sugar levels remain high. Common symptoms include increased thirst, frequent urination, and tiredness. Diet control and exercise help manage it.",
-    "hi": "डायबिटीज में ब्लड शुगर बढ़ जाता है। प्यास लगना, बार-बार पेशाब और थकान इसके लक्षण हैं।",
-    "ta": "நீரிழிவு நோயில் இரத்த சர்க்கரை அதிகரிக்கும். தாகம், சோர்வு, அடிக்கடி சிறுநீர் போகுவது அறிகுறிகள்.",
-    "te": "డయాబెటీస్‌లో రక్తంలో చక్కెర పెరుగుతుంది. దాహం, అలసట, ఎక్కువ మూత్రం లక్షణాలు.",
-    "kn": "ಮಧುಮೇಹದಲ್ಲಿ ರಕ್ತದ ಸಕ್ಕರೆ ಹೆಚ್ಚಾಗುತ್ತದೆ. ಬಾಯಾರಿಕೆ, ದೌರ್ಬಲ್ಯ, ಹೆಚ್ಚು ಮೂತ್ರ ವಿಸರ್ಜನೆ ಕಾಣುತ್ತದೆ.",
-    "ml": "ഡയബിറ്റിസിൽ രക്തത്തിലെ പഞ്ചസാര ഉയരും. ദാഹം, ക്ഷീണം, അധിക മൂത്രമൊഴുക്ക് ഉണ്ടാകും."
-  },
-
-  "hypertension": {
-    "en": "High blood pressure often shows no symptoms. If untreated, it increases the risk of stroke and heart problems. Regular BP checkups are important.",
-    "hi": "उच्च रक्तचाप में अक्सर कोई लक्षण नहीं होते। यह स्ट्रोक और हृदय रोग का खतरा बढ़ा सकता है।",
-    "ta": "உயர் இரத்த அழுத்தத்திற்கு சாதாரணமாக அறிகுறிகள் இல்லை. ஸ்ட்ரோக் அபாயம் அதிகரிக்கும்.",
-    "te": "హై బీపీకి ఎక్కువగా లక్షణాలు ఉండవు. స్ట్రోక్ ప్రమాదం పెరుగుతుంది.",
-    "kn": "ಹೈ ಬ್ಲಡ್ ಪ್ರೆಶರ್‌ಗೆ ಸಾಮಾನ್ಯವಾಗಿ ಲಕ್ಷಣಗಳಿಲ್ಲ. ಇದು ಸ್ಟ್ರೋಕ್ ಅಪಾಯವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ.",
-    "ml": "ഉയർന്ന രക്തസമ്മർദ്ദത്തിന് സാധാരണ ലക്ഷണങ്ങൾ ഇല്ല. സ്ട്രോക്ക് സാധ്യത ഉയരും."
-  },
-
-  "heart_attack": {
-    "en": "Heart attack occurs when blood flow to the heart is blocked. Symptoms include chest pain, sweating, breathlessness, and left arm discomfort. Seek emergency care immediately.",
-    "hi": "हार्ट अटैक में हृदय की रक्त आपूर्ति रुक जाती है। छाती में दर्द, पसीना और सांस की कमी इसके प्रमुख लक्षण हैं।",
-    "ta": "இதய நோக்கில் இதயத்திற்கு ரத்த ஓட்டம் தடைப்படும். மார்பு வலி, வியர்வை, மூச்சுத்திணறல் ஏற்படும்.",
-    "te": "హార్ట్ అటాక్‌లో గుండెకు రక్త ప్రవాహం ఆగిపోతుంది. ఛాతిలో నొప్పి, చెమట, శ్వాసలో ఇబ్బంది ఉంటుంది.",
-    "kn": "ಹೃದಯಾಘಾತದಲ್ಲಿ ಹೃದಯಕ್ಕೆ ರಕ್ತದ ಹರಿವು ನಿಲ್ಲುತ್ತದೆ. ಎದೆನೋವು, ಬೆವರಾಟ, ಉಸಿರಾಟ ತೊಂದರೆ ಕಾಣಿಸುತ್ತದೆ.",
-    "ml": "ഹൃദയാഘാതത്തിൽ ഹൃദയത്തിലേക്കുള്ള രക്തയോട്ടം തടയപ്പെടുന്നു. നെഞ്ചുവേദന, വിയർപ്പു, ശ്വാസതടസം ഉണ്ടാകും."
-  },
-
-  "stroke": {
-    "en": "Stroke occurs when the brain's blood supply is blocked or bleeds. Symptoms include sudden weakness, slurred speech, and facial drooping. Immediate medical help is needed.",
-    "hi": "स्ट्रोक में दिमाग की रक्त आपूर्ति रुक जाती है। अचानक कमजोरी, चेहरे का टेढ़ा होना और बोलने में दिक्कत होती है।",
-    "ta": "ஸ்ட்ரோக்கில் மூளைக்கு இரத்த ஓட்டம் தடைப்படும். திடீர் பலவீனம், பேச்சு பிரச்சனை ஏற்படும்.",
-    "te": "స్ట్రోక్‌లో మెదడుకు రక్త ప్రవాహం ఆగిపోతుంది. ఆకస్మిక బలహీనత, మాట్లాడడంలో ఇబ్బంది.",
-    "kn": "ಸ್ಟ್ರೋಕ್‌ನಲ್ಲಿ ಮೆದುಳಿಗೆ ರಕ್ತ ಹರಿವು ತಡೆಯಲ್ಪಡುತ್ತದೆ. ತಕ್ಷಣದ ವೈದ್ಯಕೀಯ ನೆರವು ಅಗತ್ಯ.",
-    "ml": "സ്ട്രോക്കിൽ മസ്തിഷ്കത്തിലേക്കുള്ള രക്തയോട്ടം തടയപ്പെടുന്നു. തൽക്ഷണ ചികിത്സ അനിവാര്യമാണ്."
-  },
-
-  "asthma": {
-    "en": "Asthma affects the airways and makes breathing difficult. Symptoms include wheezing, chest tightness, and cough. Inhalers help control attacks.",
-    "hi": "अस्थमा में सांस लेने में कठिनाई, घरघराहट और सीने में जकड़न होती है। इनहेलर राहत देते हैं।",
-    "ta": "ஆஸ்துமா சுவாசக் குழாயை பாதிக்கும். வீசிங், இருமல், நெஞ்சு இறுக்கம் ஏற்படும்.",
-    "te": "ఆస్తమా శ్వాసనాళాలను ప్రభావితం చేస్తుంది. వీసింగ్, దగ్గు, ఛాతిలో బిగుసుకుపోవడం ఉంటుంది.",
-    "kn": "ಆಸ್ಥಮಾ ಉಸಿರಾಟ ಮಾರ್ಗಗಳನ್ನು ಪ್ರಭಾವಿಸುತ್ತದೆ. ವೀಸಿಂಗ್, ಕೆಮ್ಮು ಕಾಣಿಸಬಹುದು.",
-    "ml": "ആസ്ത്മ ശ്വാസകോശ പാതകളെ ബാധിക്കുന്നു. വീസിംഗ്, ചുമ, നെഞ്ചിടിപ്പ് അനുഭവിക്കാം."
-  },
-
-  "copd": {
-    "en": "COPD is a chronic lung disease often caused by smoking or pollution. It leads to cough, breathlessness, and fatigue. Avoid smoke and dust.",
-    "hi": "सीओपीडी एक फेफड़ों की बीमारी है जो धूम्रपान या प्रदूषण से होती है। सांस की कमी और खांसी होती है।",
-    "ta": "COPD புகை/மாசு காரணமாக உருவாகும் நிலையான நுரையீரல் நோய்.",
-    "te": "COPD పొగ, కాలుష్యంతో వచ్చే దీర్ఘకాలిక ఊపిరితిత్తుల వ్యాధి.",
-    "kn": "COPD ಧೂಮಪಾನ/ಮಾಲಿನ್ಯದಿಂದ ಉಂಟಾಗುವ ದೀರ್ಘಕಾಲೀನ ಫೆಫ್ಸು ರೋಗ.",
-    "ml": "COPD ധൂമപാനം/മാലിന്യം മൂലം ഉണ്ടാകുന്ന ശ്വാസകോശരോഗം."
-  },
-
-  "cancer": {
-    "en": "Cancer occurs when abnormal cells grow uncontrollably. Symptoms vary but may include lumps, weight loss, or fatigue. Early detection improves outcomes.",
-    "hi": "कैंसर में कोशिकाएं अनियंत्रित रूप से बढ़ती हैं। गांठ, वजन कम होना और थकान इसके लक्षण हो सकते हैं।",
-    "ta": "புற்றுநோய் என்பது செல்கள் கட்டுப்பாடின்றி பெருகுவது. ஆரம்ப கண்டறிதல் மிகவும் முக்கியம்.",
-    "te": "క్యాన్సర్‌లో కణాలు నియంత్రణ లేకుండా పెరుగుతాయి. ముందస్తు పరీక్షలు ఉపయోగకరం.",
-    "kn": "ಕ್ಯಾನ್ಸರ್‌ನಲ್ಲಿ ಕೋಶಗಳು ನಿಯಂತ್ರಣವಿಲ್ಲದೆ ಬೆಳೆಯುತ್ತವೆ. ಬೇಗ ಪತ್ತೆ ಮಾಡುವುದು ಮುಖ್ಯ.",
-    "ml": "കാൻസറിൽ കോശങ്ങൾ നിയന്ത്രണം കൂടാതെ വളരും. വേഗത്തിലുള്ള പരിശോധന നിർണായകം."
-  },
-
-  "anemia": {
-    "en": "Anemia occurs when hemoglobin is low. Symptoms include tiredness, pale skin, and dizziness. Iron-rich foods help improve levels.",
-    "hi": "एनीमिया में हीमोग्लोबिन कम हो जाता है। कमजोरी, चक्कर और पीलापन होता है।",
-    "ta": "அரத்தசோகம் ரத்தத்தில் ஹீமோகுளோபின் குறைவால் ஏற்படும்.",
-    "te": "అనీమియా రక్తంలో హీమోగ్లోబిన్ తక్కువగా ఉన్నప్పుడు వస్తుంది.",
-    "kn": "ಅನೀಮಿಯಾದಲ್ಲಿ ಹೆಮೋಗ್ಲೋಬಿನ್ ಕಡಿಮೆ. ದೌರ್ಬಲ್ಯ, ತಲೆಚಕ್ಕರೆಯಾಗಬಹುದು.",
-    "ml": "അനീമിയയിൽ രക്തഹീമോഗ്ലോബിൻ കുറയുന്നു. ക്ഷീണം, തലചുറ്റൽ ഉണ്ടാകും."
-  },
-
-  "thyroid": {
-    "en": "Thyroid disorders affect metabolism. Symptoms include weight changes, tiredness, and mood changes. Blood tests confirm the condition.",
-    "hi": "थायराइड में वजन बढ़ना/घटना, थकान और मूड में बदलाव होते हैं।",
-    "ta": "தைராய்டு பிரச்சனைகள் எடை மாற்றம், சோர்வு உண்டாக்கும்.",
-    "te": "థైరాయిడ్ సమస్యలు బరువు మార్పులు, అలసట, మూడ్ మార్పులు ఇస్తాయి.",
-    "kn": "ಥೈರಾಯ್ಡ್ ಸಮಸ್ಯೆಗಳು ತೂಕ ಬದಲಾವಣೆ, ದೌರ್ಬಲ್ಯ ತರುತ್ತವೆ.",
-    "ml": "ഥൈറോയിഡ് പ്രശ്നങ്ങൾ ഭാരം മാറൽ, ക്ഷീണം ഉണ്ടാക്കും."
-  },
-
-  "kidney_stones": {
-    "en": "Kidney stones cause severe side pain, nausea, and painful urination. Drinking plenty of water helps pass small stones.",
-    "hi": "किडनी स्टोन में तेज कमर दर्द, उल्टी और पेशाब में दर्द होता है। खूब पानी पिएं।",
-    "ta": "சிறுநீரக கற்கள் கடுமையான ஓரப்புற வலியை உண்டாக்கும்.",
-    "te": "కిడ్నీ రాళ్లు తీవ్రమైన నడుము నొప్పి, వాంతులు కలిగిస్తాయి.",
-    "kn": "ಮೂತ್ರಪಿಂಡದ ಕಲ್ಲು ತೀವ್ರ ಬದಿಯ ನೋವು ಉಂಟುಮಾಡುತ್ತದೆ.",
-    "ml": "വൃക്കക്കല്ല് ശക്തമായ വശവേദനയും മൂത്രവേദനയും ഉണ്ടാക്കും."
-  },
-
-  "ckd": {
-    "en": "Chronic Kidney Disease (CKD) slowly reduces kidney function. Symptoms include swelling, tiredness, and decreased urine output.",
-    "hi": "सीकेडी में किडनी धीरे-धीरे कमजोर होती है। सूजन, थकान और कम पेशाब इसके लक्षण हैं।",
-    "ta": "CKD-ல் சிறுநீரகம் மெதுவாக செயலிழக்கும்.",
-    "te": "CKDలో కిడ్నీల పని تدريగ తగ్గిపోతుంది.",
-    "kn": "CKD ಯಲ್ಲಿ ಮೂತ್ರಪಿಂಡದ ಕಾರ್ಯ ನಿಧಾನವಾಗಿ ಕಡಿಮೆಯಾಗುತ್ತದೆ.",
-    "ml": "CKDയിൽ വൃക്ക പ്രവർത്തനം കുറയുന്നു. വീക്കം, ക്ഷീണം ഉണ്ടാകും."
-  }  ,
-  "arthritis": {
-    "en": "Arthritis causes joint swelling, stiffness, and pain, especially in the knees and hands. Gentle movement and warmth reduce discomfort.",
-    "hi": "गठिया में जोड़ सूज जाते हैं और दर्द होता है, खासकर घुटनों और हाथों में। हल्की कसरत मदद कर सकती है।",
-    "ta": "வாதநோய் மூட்டுகளில் வீக்கம், வலி, இறுக்கம் உண்டாகும்.",
-    "te": "ఆర్థరైటిస్ కీళ్ల నొప్పి, వాపు, గట్టిపడు లక్షణాలు కలిగిస్తుంది.",
-    "kn": "ಸಂಧಿವಾತದಲ್ಲಿ ಜೋಡುಗಳಲ್ಲಿ ನೋವು, ಊತ, ಗಟ್ಟಿತನ ಕಾಣಿಸಬಹುದು.",
-    "ml": "ആർത്ത്രൈറ്റിസിൽ ജോലുകളിൽ വേദന, വീക്കം, മുറുകൽ ഉണ്ടാകും."
-  },
-
-  "migraine": {
-    "en": "Migraine causes severe headache with nausea, light sensitivity, and sometimes vision changes. Rest in a quiet room helps.",
-    "hi": "माइग्रेन में तेज सिरदर्द, उल्टी और रोशनी से परेशानी होती है।",
-    "ta": "மைக்கிரேன் கடுமையான தலைவலி, வாந்தி ஏற்படுத்தும்.",
-    "te": "మైగ్రేన్ తీవ్రమైన తలనొప్పి, వాంతులు, వెలుతురు భయం ఇస్తుంది.",
-    "kn": "ಮೈಗ್ರೇನ್ ತೀವ್ರ ತಲೆನೋವು, ಉಲ್ಬಣ, ಬೆಳಕಿಗೆ ತೊಂದರೆ.",
-    "ml": "മൈഗ്രേൻ ശക്തമായ തലവേദനയും ഛർദ്ദിയും ഉണ്ടാക്കും."
-  },
-
-  "epilepsy": {
-    "en": "Epilepsy causes repeated seizures due to abnormal brain activity. Symptoms include jerking, confusion, and loss of awareness. Regular medicine helps control it.",
-    "hi": "मिर्गी में झटके आते हैं। यह दिमाग की असामान्य गतिविधि के कारण होता है। नियमित दवा जरूरी है।",
-    "ta": "எபிலப்சி மீண்டும் மீண்டும் Fits ஏற்படும் நிலை.",
-    "te": "ఎపిలెప్సీ లో fits వస్తాయి. మందులు నియంత్రించడంలో సహాయపడతాయి.",
-    "kn": "ಎಪಿಲೆಪ್ಸಿ‌ನಲ್ಲಿ ಪುನರಾವರ್ತಿತ ಅಡ್ಡಿ ಸಂಭವಿಸುತ್ತದೆ.",
-    "ml": "എപ്പിലപ്സിയിൽ ആവർത്തിച്ചുള്ള ക്ഷണക്ഷോഭങ്ങൾ ഉണ്ടാകും."
-  },
-
-  "pcos": {
-    "en": "PCOS affects women’s hormones, causing irregular periods, acne, and weight gain. Exercise and proper diet help manage symptoms.",
-    "hi": "पीसीओएस में हार्मोन असंतुलन होता है जिससे पीरियड अनियमित हो जाते हैं।",
-    "ta": "PCOS பெண்களின் ஹார்மோன்களை பாதிக்கும். முறையற்ற மாதவிடாய் ஏற்படும்.",
-    "te": "PCOS మహిళల్లో హార్మోన్ అసమతుల్యత కలిగిస్తుంది.",
-    "kn": "PCOS ಮಹಿಳೆಯರಲ್ಲಿ ಹಾರ್ಮೋನ್ ಅಸಮತೋಲನ ಉಂಟುಮಾಡುತ್ತದೆ.",
-    "ml": "PCOS സ്ത്രീകളിലെ ഹോർമോൺ അസന്തുലിതാവസ്ഥയാണ്."
-  },
-
-  "dehydration": {
-    "en": "Dehydration happens when the body loses too much water. Symptoms include dry mouth, dizziness, and low urine. ORS and fluids help recovery.",
-    "hi": "पानी की कमी में चक्कर, मुंह सूखना और पेशाब कम हो जाता है। ओआरएस जरूरी है।",
-    "ta": "நீரிழப்பு தாகம், மயக்கம், குறைவான சிறுநீர் ஏற்படுத்தும்.",
-    "te": "డీహైడ్రేషన్‌లో దాహం, తల తిరగడం, తక్కువ మూత్రం ఉంటుంది.",
-    "kn": "ದೇಹದ ನೀರಿಳಿಕೆಯಲ್ಲಿ ದಾಹ, ತಲೆಸುತ್ತು ಕಾಣಬಹುದು.",
-    "ml": "ദേഹദാഹത്തിൽ വായ് വരണ്ടു, തലചുറ്റൽ, കുറവ് മൂത്രമൊഴുക്കും."
-  },
-
-  "malnutrition": {
-    "en": "Malnutrition occurs when the body lacks essential nutrients. Symptoms include weight loss, weakness, and frequent illness. Balanced diet improves health.",
-    "hi": "कुपोषण में शरीर को पोषण नहीं मिलता। कमजोरी और बार-बार बीमारी होती है।",
-    "ta": "குறைந்த உணவு சத்து காரணமாக வலிமை குறைவு, உடல் பலவீனம் வரும்.",
-    "te": "పోషకాహార లోపం వల్ల బలహీనత, తరచు అనారోగ్యం వస్తుంది.",
-    "kn": "ಕ್ರೀಶತೆ ಪೋಷಕಾಂಶಗಳ ಕೊರತೆಯಿಂದ ಬರುತ್ತದೆ.",
-    "ml": "പോഷകക്കുറവിൽ ബലഹീനതയും രോഗബാധയും കൂടും."
-  },
-
-  "heat_stroke": {
-    "en": "Heat stroke occurs due to extreme heat exposure. Symptoms include high fever, confusion, and dry skin. Immediate cooling and medical care are required.",
-    "hi": "लू लगने पर तेज बुखार, चक्कर और शरीर गर्म हो जाता है। तुरंत ठंडक दें।",
-    "ta": "வெயில்புகை காரணமாக உடல் சூடு, மயக்கம் ஏற்படும்.",
-    "te": "హీట్ స్ట్రోక్‌లో అధిక జ్వరం, అయోమయం, పొడిబారిన చర్మం కనిపిస్తాయి.",
-    "kn": "ಹೀಟ್ ಸ್ಟ್ರೋಕ್‌ನಲ್ಲಿ ದೇಹ ಹೆಚ್ಚು ಬಿಸಿ, ಗಾಬರಿ ಕಾಣಿಸಬಹುದು.",
-    "ml": "ഹീറ്റ് സ്‌ട്രോക്കിൽ ശരീരം അമിതമായി ചൂടാകുകയും ബോധക്ഷയം ഉണ്ടാകുകയും ചെയ്യും."
-  },
-
-  "snake_bite": {
-    "en": "Snake bite may cause swelling, pain, or paralysis depending on the snake. Keep the person still and avoid tying the limb. Seek emergency help immediately.",
-    "hi": "सांप के काटने पर सूजन, दर्द या लकवा हो सकता है। तुरंत अस्पताल ले जाएं।",
-    "ta": "பாம்பு கடியில் வீக்கம், வலி அல்லது ஊனம் ஏற்படலாம்.",
-    "te": "పాము కాటు వలన వాపు, నొప్పి లేదా గుర్తు కోల్పోవడం కలగొచ్చు.",
-    "kn": "ಹಾವು ಕಡಿತದಲ್ಲಿ ಊತ, ನೋವು ಅಥವಾ ಅಂಗವೈಕಲ್ಯ ಉಂಟಾಗಬಹುದು.",
-    "ml": "പാമ്പുകടി വീക്കം, വേദന, പക്ഷാഘാതം ഉണ്ടാക്കാം. ഉടൻ ചികിത്സ തേടുക."
-  },
-
-  "food_poisoning": {
-    "en": "Food poisoning results from contaminated food. Symptoms include vomiting, diarrhea, and stomach pain. ORS and light food help recovery.",
-    "hi": "फूड पॉइजनिंग में उल्टी, दस्त और पेट दर्द होता है। ओआरएस पिएं।",
-    "ta": "கெட்ட உணவு காரணமாக வாந்தி, வயிற்றுப்போக்கு ஏற்படும்.",
-    "te": "అశుభ్రమైన ఆహారం వల్ల వాంతులు, డైరియా వస్తాయి.",
-    "kn": "ಅಶುದ್ಧ ಆಹಾರದಿಂದ ವಾಂತಿ, ಜಲದೋಷ ಉಂಟಾಗಬಹುದು.",
-    "ml": "അശുദ്ധഭക്ഷണം മൂലം ഛർദ്ദി, വയറിളക്കം ഉണ്ടാകും."
-  },
-
-  "skin_infections": {
-    "en": "Skin infections cause redness, itching, and swelling. Keep the area clean and dry. Avoid scratching and use mild soap.",
-    "hi": "त्वचा संक्रमण में लालपन, खुजली और सूजन होती है। साफ-सफाई जरूरी है।",
-    "ta": "தோல் தொற்றில் சிவப்பு, அரிப்பு, வீக்கம் ஏற்படும்.",
-    "te": "చర్మ వ్యాధిలో ఎర్రదనము, వాపు, దురద కనిపిస్తాయి.",
-    "kn": "ಚರ್ಮದ ಸೋಂಕಿನಲ್ಲಿ ಕೆಂಪು, ಕಾರಿಕೆ, ಊತ ಕಾಣಿಸಬಹುದು.",
-    "ml": "ത്വക്ക് അണുബാധയിൽ ചുവപ്പ്, ചൊറിച്ചിൽ, വീക്കം ഉണ്ടാകും."
+    "covid": {
+  "en": {
+    "what": "COVID-19 is a viral respiratory infection caused by the SARS-CoV-2 virus. It spreads through droplets when an infected person coughs, sneezes, or talks.",
+    "symptoms": [
+      "Fever",
+      "Dry cough",
+      "Tiredness",
+      "Sore throat",
+      "Headache",
+      "Loss of taste or smell",
+      "Body pain",
+      "Breathing difficulty (severe cases)"
+    ],
+    "prevention": [
+      "Wear a mask in crowded places",
+      "Wash hands regularly",
+      "Maintain distance from sick people",
+      "Avoid touching face",
+      "Improve ventilation",
+      "Cover coughs and sneezes",
+      "Stay home if sick",
+      "Get vaccinated when available"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "ORS if dehydrated",
+      "Warm soups or herbal teas",
+      "Paracetamol for fever or pain",
+      "Steam inhalation for congestion",
+      "Avoid antibiotics unless prescribed",
+      "Seek medical help if breathing difficulty or chest pain occurs"
+    ]
+  }
+},
+"dengue": {
+  "en": {
+    "what": "Dengue is a viral infection spread through the bite of Aedes mosquitoes. It causes high fever, joint and muscle pain, and weakness. Severe dengue can lead to bleeding and dehydration.",
+    "symptoms": [
+      "High fever",
+      "Severe joint and muscle pain",
+      "Headache",
+      "Nausea or vomiting",
+      "Skin rash",
+      "Weakness",
+      "Bleeding gums or nose (severe cases)"
+    ],
+    "prevention": [
+      "Avoid mosquito bites",
+      "Use mosquito repellent",
+      "Wear long sleeves and pants",
+      "Use mosquito nets",
+      "Keep surroundings clean",
+      "Remove stagnant water containers",
+      "Close windows in early morning and evening"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "ORS for dehydration",
+      "Paracetamol for fever",
+      "Avoid aspirin or ibuprofen",
+      "Seek medical help if bleeding or severe weakness occurs"
+    ]
+  }
+},
+"malaria": {
+  "en": {
+    "what": "Malaria is a parasitic infection transmitted through the bite of infected Anopheles mosquitoes. It affects red blood cells and can become life-threatening if untreated.",
+    "symptoms": [
+      "High fever",
+      "Chills and shivering",
+      "Sweating",
+      "Headache",
+      "Body pain",
+      "Nausea or vomiting",
+      "Fatigue",
+      "Anemia (severe cases)"
+    ],
+    "prevention": [
+      "Avoid mosquito bites",
+      "Use mosquito repellent",
+      "Sleep under insecticide-treated nets",
+      "Wear long sleeves and pants",
+      "Keep surroundings clean",
+      "Remove stagnant water",
+      "Use window screens"
+    ],
+    "remedies": [
+      "Seek medical treatment immediately",
+      "Take prescribed antimalarial medications",
+      "Drink plenty of fluids",
+      "Rest",
+      "Paracetamol for fever",
+      "Avoid self-medication without diagnosis"
+    ]
+  }
+},
+"tuberculosis": {
+  "en": {
+    "what": "Tuberculosis (TB) is a bacterial infection caused by Mycobacterium tuberculosis. It mainly affects the lungs but can also affect other organs. TB spreads through droplets when an infected person coughs or sneezes.",
+    "symptoms": [
+      "Persistent cough for more than 2 weeks",
+      "Coughing up mucus or blood",
+      "Fever",
+      "Night sweats",
+      "Weight loss",
+      "Chest pain",
+      "Fatigue",
+      "Loss of appetite"
+    ],
+    "prevention": [
+      "Cover mouth while coughing or sneezing",
+      "Avoid close contact with infected individuals",
+      "Ensure proper ventilation",
+      "Complete BCG vaccination",
+      "Use masks in high-risk areas",
+      "Improve hygiene and sanitation"
+    ],
+    "remedies": [
+      "Take full TB medication course as prescribed",
+      "Regular follow-up with doctor",
+      "Eat nutritious food",
+      "Rest adequately",
+      "Avoid smoking and alcohol",
+      "Do NOT stop medication even if symptoms reduce"
+    ]
+  }
+},
+"influenza": {
+  "en": {
+    "what": "Influenza (flu) is a contagious viral infection that affects the nose, throat, and lungs. It spreads through droplets when an infected person coughs, sneezes, or talks.",
+    "symptoms": [
+      "Fever",
+      "Cough",
+      "Runny or blocked nose",
+      "Sore throat",
+      "Body aches",
+      "Headache",
+      "Fatigue",
+      "Chills",
+      "Vomiting (sometimes)"
+    ],
+    "prevention": [
+      "Get annual flu vaccination",
+      "Wash hands regularly",
+      "Avoid close contact with sick individuals",
+      "Cover mouth and nose when coughing or sneezing",
+      "Wear a mask in crowded places",
+      "Improve ventilation",
+      "Avoid touching face"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "Warm soups and teas",
+      "Paracetamol for fever and pain",
+      "Steam inhalation for congestion",
+      "Avoid antibiotics unless prescribed",
+      "Seek medical help if breathing difficulty occurs"
+    ]
+  }
+},
+"typhoid": {
+  "en": {
+    "what": "Typhoid is a bacterial infection caused by Salmonella typhi, usually spread through contaminated food or water. It affects the digestive system and can become serious if untreated.",
+    "symptoms": [
+      "Prolonged fever",
+      "Headache",
+      "Stomach pain",
+      "Loss of appetite",
+      "Weakness",
+      "Diarrhea or constipation",
+      "Rose spots on the skin (sometimes)"
+    ],
+    "prevention": [
+      "Drink clean and boiled water",
+      "Maintain good hygiene",
+      "Wash hands before eating",
+      "Avoid street food",
+      "Ensure proper sanitation",
+      "Get typhoid vaccination",
+      "Eat well-cooked food"
+    ],
+    "remedies": [
+      "Take prescribed antibiotics",
+      "Drink plenty of fluids",
+      "ORS for dehydration",
+      "Eat light and soft foods",
+      "Rest well",
+      "Avoid spicy and oily foods",
+      "Seek medical help if symptoms worsen"
+    ]
+  }
+},
+"cholera": {
+  "en": {
+    "what": "Cholera is a bacterial infection caused by Vibrio cholerae, usually spread through contaminated food or water. It leads to severe watery diarrhea and dehydration and can be life-threatening if not treated quickly.",
+    "symptoms": [
+      "Watery diarrhea (rice-water stools)",
+      "Vomiting",
+      "Rapid dehydration",
+      "Dry mouth",
+      "Muscle cramps",
+      "Low blood pressure",
+      "Weakness"
+    ],
+    "prevention": [
+      "Drink clean and boiled water",
+      "Use ORS and safe fluids",
+      "Maintain proper sanitation",
+      "Wash hands regularly",
+      "Avoid contaminated food and water",
+      "Eat freshly cooked food",
+      "Avoid raw vegetables and street food"
+    ],
+    "remedies": [
+      "Immediate ORS intake",
+      "Drink clean water frequently",
+      "Zinc supplements (if advised)",
+      "Hospital treatment for severe dehydration",
+      "IV fluids if needed",
+      "Antibiotics only if prescribed",
+      "Seek urgent medical help for severe symptoms"
+    ]
+  }
+},
+"chikungunya": {
+  "en": {
+    "what": "Chikungunya is a viral infection transmitted through the bite of Aedes mosquitoes. It causes severe joint pain and fever, and recovery may take weeks.",
+    "symptoms": [
+      "High fever",
+      "Severe joint pain",
+      "Headache",
+      "Muscle pain",
+      "Swelling in joints",
+      "Rash",
+      "Fatigue"
+    ],
+    "prevention": [
+      "Avoid mosquito bites",
+      "Use mosquito repellent",
+      "Wear long sleeves and pants",
+      "Use mosquito nets",
+      "Remove stagnant water",
+      "Keep surroundings clean",
+      "Use window and door screens"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "Paracetamol for fever and pain",
+      "Warm compress for joint pain",
+      "Avoid aspirin or ibuprofen without doctor advice",
+      "Gentle movement and stretching",
+      "Seek medical care if pain is severe"
+    ]
+  }
+},
+"hepatitis_a": {
+  "en": {
+    "what": "Hepatitis A is a viral infection that affects the liver, usually spread through contaminated food or water. It often causes jaundice and digestive symptoms but usually resolves with proper care.",
+    "symptoms": [
+      "Yellowing of skin and eyes (jaundice)",
+      "Fever",
+      "Nausea",
+      "Vomiting",
+      "Stomach discomfort",
+      "Dark urine",
+      "Fatigue",
+      "Loss of appetite"
+    ],
+    "prevention": [
+      "Drink clean and boiled water",
+      "Maintain hand hygiene",
+      "Avoid contaminated food",
+      "Ensure proper sanitation",
+      "Get Hepatitis A vaccination",
+      "Avoid eating raw or undercooked food",
+      "Wash fruits and vegetables properly"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "Eat light and nutritious food",
+      "Avoid alcohol",
+      "Avoid oily and spicy foods",
+      "Take prescribed medications only",
+      "Seek medical advice if symptoms worsen"
+    ]
+  }
+},
+"hepatitis_b": {
+  "en": {
+    "what": "Hepatitis B is a viral infection that affects the liver and spreads through blood or body fluids. It can become chronic and lead to serious liver damage if untreated.",
+    "symptoms": [
+      "Jaundice (yellow skin and eyes)",
+      "Fatigue",
+      "Fever",
+      "Dark urine",
+      "Stomach pain",
+      "Loss of appetite",
+      "Nausea and vomiting",
+      "Joint pain"
+    ],
+    "prevention": [
+      "Get Hepatitis B vaccination",
+      "Avoid sharing needles or razors",
+      "Practice safe sex",
+      "Ensure safe blood transfusion",
+      "Avoid contact with infected blood",
+      "Use sterilized medical equipment"
+    ],
+    "remedies": [
+      "Take antiviral medication if prescribed",
+      "Regular liver check-ups",
+      "Rest",
+      "Eat a healthy diet",
+      "Avoid alcohol",
+      "Avoid fatty and oily foods",
+      "Consult a doctor for long-term management"
+    ]
+  }
+},
+"hepatitis_c": {
+  "en": {
+    "what": "Hepatitis C is a viral infection that spreads mainly through infected blood. It often shows no early symptoms but can lead to chronic liver disease and serious complications if untreated.",
+    "symptoms": [
+      "Fatigue",
+      "Fever",
+      "Nausea",
+      "Loss of appetite",
+      "Dark urine",
+      "Jaundice (yellow skin and eyes)",
+      "Joint pain",
+      "Abdominal pain"
+    ],
+    "prevention": [
+      "Avoid sharing needles or syringes",
+      "Ensure safe blood transfusions",
+      "Use sterilized medical equipment",
+      "Avoid sharing razors or toothbrushes",
+      "Practice safe sex",
+      "Get tested if at risk"
+    ],
+    "remedies": [
+      "Take antiviral medication if prescribed",
+      "Regular liver monitoring",
+      "Healthy and balanced diet",
+      "Avoid alcohol",
+      "Avoid fatty and oily foods",
+      "Consult a doctor for long-term treatment"
+    ]
+  }
+},
+"hiv": {
+  "en": {
+    "what": "HIV (Human Immunodeficiency Virus) is a virus that attacks and weakens the immune system, making the body more vulnerable to infections. With proper treatment, people can live long and healthy lives.",
+    "symptoms": [
+      "Fever",
+      "Tiredness",
+      "Weight loss",
+      "Night sweats",
+      "Swollen lymph nodes",
+      "Frequent infections",
+      "Diarrhea",
+      "Skin rashes"
+    ],
+    "prevention": [
+      "Practice safe sex",
+      "Avoid sharing needles",
+      "Ensure safe blood transfusion",
+      "Use sterilized medical equipment",
+      "Get regular HIV testing",
+      "Prevent mother-to-child transmission during pregnancy"
+    ],
+    "remedies": [
+      "Take antiretroviral therapy (ART) as prescribed",
+      "Regular medical check-ups",
+      "Eat a balanced and nutritious diet",
+      "Maintain hygiene",
+      "Avoid smoking and alcohol",
+      "Seek counseling and support if needed"
+    ]
+  }
+},
+"measles": {
+  "en": {
+    "what": "Measles is a highly contagious viral infection that spreads through the air when an infected person coughs or sneezes. It mainly affects children and can lead to serious complications if untreated.",
+    "symptoms": [
+      "High fever",
+      "Cough",
+      "Runny nose",
+      "Red and watery eyes",
+      "Sore throat",
+      "Rash starting on the face and spreading",
+      "White spots inside the mouth (Koplik spots)",
+      "Fatigue"
+    ],
+    "prevention": [
+      "Get MMR vaccination",
+      "Avoid contact with infected individuals",
+      "Maintain good hygiene",
+      "Cover mouth and nose when coughing or sneezing",
+      "Ensure proper ventilation",
+      "Wash hands regularly"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "Paracetamol for fever",
+      "Humidifier or steam inhalation for cough",
+      "Vitamin A supplements (if prescribed)",
+      "Seek medical help if breathing difficulty or severe symptoms occur"
+    ]
+  }
+},
+"mumps": {
+  "en": {
+    "what": "Mumps is a contagious viral infection that primarily affects the salivary glands located near the jaw. It spreads through saliva, coughing, sneezing, or sharing food and drinks.",
+    "symptoms": [
+      "Swelling near the jaw or cheeks",
+      "Fever",
+      "Headache",
+      "Pain while chewing or swallowing",
+      "Fatigue",
+      "Loss of appetite",
+      "Ear pain",
+      "Muscle aches"
+    ],
+    "prevention": [
+      "Get MMR vaccination",
+      "Avoid sharing food, drinks, or utensils",
+      "Cover mouth when coughing or sneezing",
+      "Maintain good hygiene",
+      "Wash hands regularly",
+      "Avoid close contact with infected individuals"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "Warm or cold compress on swollen areas",
+      "Soft foods to reduce chewing pain",
+      "Paracetamol for fever and pain",
+      "Avoid acidic foods",
+      "Seek medical help if severe swelling or complications occur"
+    ]
+  }
+},
+"chickenpox": {
+  "en": {
+    "what": "Chickenpox is a highly contagious viral infection caused by the varicella-zoster virus. It spreads easily from person to person through coughing, sneezing, or direct contact with the fluid in blisters.",
+    "symptoms": [
+      "Itchy red blisters filled with fluid",
+      "Fever",
+      "Fatigue",
+      "Headache",
+      "Loss of appetite",
+      "Scabs forming after blisters dry",
+      "Body aches"
+    ],
+    "prevention": [
+      "Get varicella vaccination",
+      "Avoid close contact with infected individuals",
+      "Maintain good hygiene",
+      "Do not share personal items",
+      "Cover mouth and nose when coughing or sneezing"
+    ],
+    "remedies": [
+      "Rest",
+      "Drink plenty of fluids",
+      "Calamine lotion for itching",
+      "Oatmeal bath to soothe skin",
+      "Paracetamol for fever (avoid aspirin in children)",
+      "Keep nails short to prevent scratching",
+      "Seek medical help if breathing difficulty or severe infection occurs"
+    ]
+  }
+},
+"jaundice": {
+  "en": {
+    "what": "Jaundice is a condition where the skin and eyes turn yellow due to excess bilirubin in the blood, usually caused by liver problems, infection, or blockage of bile ducts.",
+    "symptoms": [
+      "Yellowing of skin and eyes",
+      "Dark urine",
+      "Pale stools",
+      "Fatigue",
+      "Nausea",
+      "Loss of appetite",
+      "Itching",
+      "Stomach pain"
+    ],
+    "prevention": [
+      "Maintain good hygiene",
+      "Avoid contaminated food and water",
+      "Limit alcohol consumption",
+      "Get vaccinated for Hepatitis",
+      "Avoid sharing needles",
+      "Practice safe sex",
+      "Wash hands regularly"
+    ],
+    "remedies": [
+      "Drink plenty of fluids",
+      "Eat light and nutritious food",
+      "Avoid alcohol completely",
+      "Avoid oily and spicy foods",
+      "Rest well",
+      "Follow doctor-prescribed medications",
+      "Seek medical help if symptoms worsen"
+    ]
+  }
+},"pneumonia": {
+  "en": {
+    "what": "Pneumonia is an infection that inflames the air sacs in one or both lungs, caused by bacteria, viruses, or fungi. It can be mild or life-threatening, especially in children, elderly, and people with weak immunity.",
+    "symptoms": [
+      "Fever",
+      "Chest pain",
+      "Cough with mucus",
+      "Shortness of breath",
+      "Fast breathing",
+      "Fatigue",
+      "Chills",
+      "Loss of appetite"
+    ],
+    "prevention": [
+      "Get pneumonia and flu vaccination",
+      "Wash hands regularly",
+      "Avoid smoking",
+      "Maintain good hygiene",
+      "Avoid close contact with sick individuals",
+      "Strengthen immune system with healthy diet",
+      "Practice proper cough etiquette"
+    ],
+    "remedies": [
+      "Take prescribed antibiotics or antivirals",
+      "Rest well",
+      "Drink plenty of fluids",
+      "Steam inhalation for congestion",
+      "Pain relievers for fever and chest pain",
+      "Seek urgent medical help if breathing difficulty occurs"
+    ]
+  }
+},
+"diarrhea": {
+  "en": {
+    "what": "Diarrhea is a condition where a person passes loose or watery stools frequently. It can be caused by infections, contaminated food or water, or digestive disorders, and may lead to dehydration.",
+    "symptoms": [
+      "Loose or watery stools",
+      "Frequent bowel movements",
+      "Stomach cramps",
+      "Nausea",
+      "Vomiting",
+      "Dehydration",
+      "Dry mouth",
+      "Weakness"
+    ],
+    "prevention": [
+      "Drink clean and safe water",
+      "Maintain proper hand hygiene",
+      "Avoid street food",
+      "Wash fruits and vegetables thoroughly",
+      "Ensure proper food storage",
+      "Avoid contaminated food and water"
+    ],
+    "remedies": [
+      "ORS to prevent dehydration",
+      "Drink plenty of fluids",
+      "Eat light foods like rice, banana, toast",
+      "Avoid oily and spicy foods",
+      "Avoid dairy temporarily",
+      "Take zinc supplements if advised",
+      "Seek medical help if symptoms persist or dehydration worsens"
+    ]
+  }
+},
+"uti": {
+  "en": {
+    "what": "A Urinary Tract Infection (UTI) is an infection in any part of the urinary system, usually caused by bacteria. It commonly affects the bladder and urethra and is more common in women.",
+    "symptoms": [
+      "Burning sensation during urination",
+      "Frequent urge to urinate",
+      "Lower abdominal pain",
+      "Cloudy or strong-smelling urine",
+      "Blood in urine (sometimes)",
+      "Fever (in severe cases)",
+      "Pelvic discomfort"
+    ],
+    "prevention": [
+      "Drink plenty of water",
+      "Maintain good genital hygiene",
+      "Do not hold urine for long periods",
+      "Wipe from front to back after using the toilet",
+      "Avoid tight clothing",
+      "Urinate after sexual activity",
+      "Avoid scented feminine products"
+    ],
+    "remedies": [
+      "Drink plenty of water",
+      "Take doctor-prescribed antibiotics",
+      "Use heating pad for pain relief",
+      "Drink cranberry juice (optional benefit)",
+      "Avoid caffeine and alcohol",
+      "Seek medical help if fever or back pain occurs"
+    ]
+  }
+},
+"diabetes": {
+  "en": {
+    "what": "Diabetes is a chronic condition where the body cannot properly regulate blood sugar levels, either due to lack of insulin or the body's inability to use insulin effectively.",
+    "symptoms": [
+      "Increased thirst",
+      "Frequent urination",
+      "Unusual hunger",
+      "Fatigue",
+      "Blurry vision",
+      "Slow healing wounds",
+      "Weight loss (Type 1)",
+      "Numbness or tingling in hands and feet"
+    ],
+    "prevention": [
+      "Maintain a healthy diet",
+      "Limit sugar and processed foods",
+      "Exercise regularly",
+      "Maintain healthy body weight",
+      "Avoid smoking and alcohol",
+      "Regular blood sugar check-ups",
+      "Manage stress"
+    ],
+    "remedies": [
+      "Follow doctor-prescribed medication or insulin",
+      "Eat balanced meals with controlled carbohydrates",
+      "Exercise regularly",
+      "Monitor blood sugar levels",
+      "Stay hydrated",
+      "Foot care to prevent infections",
+      "Seek medical help for complications"
+    ]
+  }
+},
+"hypertension": {
+  "en": {
+    "what": "Hypertension, or high blood pressure, is a condition where the force of blood against the artery walls remains consistently high. It often shows no symptoms but increases the risk of heart attack, stroke, and kidney disease.",
+    "symptoms": [
+      "Often no symptoms",
+      "Headache (sometimes)",
+      "Dizziness",
+      "Blurred vision",
+      "Shortness of breath",
+      "Chest pain (severe cases)",
+      "Nosebleeds (rare)"
+    ],
+    "prevention": [
+      "Maintain a healthy diet",
+      "Reduce salt intake",
+      "Exercise regularly",
+      "Maintain healthy body weight",
+      "Avoid smoking",
+      "Limit alcohol consumption",
+      "Manage stress",
+      "Regular blood pressure check-ups"
+    ],
+    "remedies": [
+      "Take doctor-prescribed BP medication",
+      "Reduce salt and processed foods",
+      "Exercise regularly",
+      "Stay hydrated",
+      "Avoid smoking and alcohol",
+      "Monitor blood pressure regularly",
+      "Seek medical help if chest pain or severe symptoms occur"
+    ]
+  }
+},
+"heart_attack": {
+  "en": {
+    "what": "A heart attack occurs when blood flow to a part of the heart is blocked, usually due to a blood clot. This prevents oxygen from reaching the heart muscle, causing damage.",
+    "symptoms": [
+      "Chest pain or pressure",
+      "Pain spreading to left arm, jaw, back, or neck",
+      "Shortness of breath",
+      "Sweating",
+      "Nausea",
+      "Dizziness",
+      "Fatigue",
+      "Cold sweat"
+    ],
+    "prevention": [
+      "Maintain a healthy diet",
+      "Exercise regularly",
+      "Avoid smoking and alcohol",
+      "Maintain healthy weight",
+      "Control blood pressure and diabetes",
+      "Manage cholesterol levels",
+      "Reduce stress",
+      "Regular heart check-ups"
+    ],
+    "remedies": [
+      "Seek emergency medical help immediately",
+      "Chew aspirin if advised",
+      "Stay calm and rest",
+      "Take doctor-prescribed medications",
+      "Long-term lifestyle changes",
+      "Cardiac rehabilitation if recommended"
+    ]
+  }
+},
+"stroke": {
+  "en": {
+    "what": "A stroke occurs when the blood supply to part of the brain is blocked or when a blood vessel in the brain bursts, leading to brain damage. It requires immediate medical attention.",
+    "symptoms": [
+      "Sudden weakness on one side of the body",
+      "Facial drooping",
+      "Slurred or difficult speech",
+      "Confusion",
+      "Sudden severe headache",
+      "Difficulty walking",
+      "Vision problems",
+      "Dizziness"
+    ],
+    "prevention": [
+      "Maintain healthy blood pressure",
+      "Control diabetes and cholesterol",
+      "Avoid smoking",
+      "Limit alcohol consumption",
+      "Exercise regularly",
+      "Maintain a healthy diet",
+      "Manage stress",
+      "Regular health check-ups"
+    ],
+    "remedies": [
+      "Seek immediate emergency medical help",
+      "Do NOT give food or drink",
+      "Keep the person lying on their side",
+      "Follow doctor-prescribed medications",
+      "Physical therapy for recovery",
+      "Speech therapy if needed",
+      "Long-term lifestyle changes"
+    ]
+  }
+},
+"asthma": {
+  "en": {
+    "what": "Asthma is a chronic condition that affects the airways, causing them to become inflamed and narrowed, making breathing difficult. It can be triggered by allergies, pollution, exercise, or infections.",
+    "symptoms": [
+      "Wheezing (whistling sound while breathing)",
+      "Shortness of breath",
+      "Chest tightness",
+      "Coughing (especially at night or early morning)",
+      "Difficulty breathing",
+      "Fatigue during physical activity"
+    ],
+    "prevention": [
+      "Avoid allergens and triggers",
+      "Keep home dust-free",
+      "Avoid smoking and polluted environments",
+      "Use mask in dusty areas",
+      "Maintain good ventilation",
+      "Take prescribed inhaler regularly",
+      "Avoid strong perfumes or chemicals"
+    ],
+    "remedies": [
+      "Use doctor-prescribed inhaler (reliever or controller)",
+      "Sit upright and stay calm during an attack",
+      "Drink warm fluids",
+      "Steam inhalation",
+      "Avoid cold air exposure",
+      "Seek immediate medical help if breathing worsens"
+    ]
+  }
+},
+"copd": {
+  "en": {
+    "what": "COPD is a chronic lung disease, often caused by smoking or long-term exposure to pollution, dust, or chemicals. It causes airflow blockage and breathing problems.",
+    "symptoms": [
+      "Chronic cough",
+      "Shortness of breath",
+      "Wheezing",
+      "Chest tightness",
+      "Frequent respiratory infections",
+      "Fatigue",
+      "Excess mucus production"
+    ],
+    "prevention": [
+      "Avoid smoking",
+      "Avoid exposure to pollution and dust",
+      "Use mask in polluted environments",
+      "Improve ventilation at home",
+      "Avoid chemical fumes",
+      "Regular exercise to strengthen lungs",
+      "Healthy diet to boost immunity"
+    ],
+    "remedies": [
+      "Quit smoking immediately",
+      "Use doctor-prescribed inhalers",
+      "Breathing exercises",
+      "Steam inhalation",
+      "Drink plenty of fluids",
+      "Pulmonary rehabilitation if advised",
+      "Seek medical help if breathing worsens"
+    ]
+  }
+},
+"cancer": {
+  "en": {
+    "what": "Cancer occurs when abnormal cells in the body grow uncontrollably and spread to other parts. It can affect any organ and may become life-threatening if not detected early.",
+    "symptoms": [
+      "Unexplained weight loss",
+      "Persistent fatigue",
+      "Lumps or swelling",
+      "Long-lasting pain",
+      "Changes in skin or moles",
+      "Abnormal bleeding",
+      "Persistent cough",
+      "Changes in bowel or bladder habits"
+    ],
+    "prevention": [
+      "Avoid smoking and tobacco",
+      "Limit alcohol consumption",
+      "Eat a healthy diet rich in fruits and vegetables",
+      "Maintain healthy weight",
+      "Exercise regularly",
+      "Avoid excessive sun exposure",
+      "Get regular health screenings",
+      "Avoid exposure to harmful chemicals"
+    ],
+    "remedies": [
+      "Follow doctor-prescribed treatment (chemotherapy, radiation, surgery)",
+      "Healthy and nutritious diet",
+      "Adequate rest",
+      "Pain management as advised",
+      "Emotional and psychological support",
+      "Regular follow-up appointments",
+      "Avoid smoking and alcohol"
+    ]
+  }
+},
+"anemia": {
+  "en": {
+    "what": "Anemia is a condition where the body has a lower-than-normal number of red blood cells or hemoglobin, leading to reduced oxygen transport in the body.",
+    "symptoms": [
+      "Fatigue or tiredness",
+      "Pale skin",
+      "Dizziness",
+      "Shortness of breath",
+      "Headache",
+      "Weakness",
+      "Cold hands and feet",
+      "Chest pain (severe cases)"
+    ],
+    "prevention": [
+      "Eat iron-rich foods",
+      "Include vitamin C in diet",
+      "Regular health check-ups",
+      "Avoid excessive tea or coffee with meals",
+      "Treat underlying infections",
+      "Balanced and nutritious diet"
+    ],
+    "remedies": [
+      "Eat iron-rich foods like spinach, beans, and red meat",
+      "Take iron supplements if prescribed",
+      "Increase vitamin C intake",
+      "Adequate rest",
+      "Avoid heavy exercise during severe anemia",
+      "Seek medical help if symptoms worsen"
+    ]
+  }
+},
+"thyroid": {
+  "en": {
+    "what": "Thyroid disorders occur when the thyroid gland produces too little (hypothyroidism) or too much (hyperthyroidism) hormone, affecting metabolism, energy levels, and body functions.",
+    "symptoms": [
+      "Weight gain or weight loss",
+      "Fatigue",
+      "Mood changes",
+      "Hair loss",
+      "Dry skin",
+      "Irregular periods",
+      "Cold or heat intolerance",
+      "Swelling in neck (goiter)"
+    ],
+    "prevention": [
+      "Maintain a balanced diet",
+      "Ensure adequate iodine intake",
+      "Regular thyroid check-ups",
+      "Manage stress",
+      "Avoid smoking",
+      "Maintain healthy weight"
+    ],
+    "remedies": [
+      "Take doctor-prescribed thyroid medication",
+      "Regular thyroid hormone monitoring",
+      "Eat iodine-rich foods (hypothyroidism)",
+      "Avoid excess iodine (hyperthyroidism)",
+      "Get enough sleep",
+      "Manage stress through relaxation techniques",
+      "Seek medical help if symptoms worsen"
+    ]
+  }
+},
+"kidney_stones": {
+  "en": {
+    "what": "Kidney stones are hard deposits made of minerals and salts that form inside the kidneys. They can block the urinary tract and cause severe pain.",
+    "symptoms": [
+      "Severe side or back pain",
+      "Pain while urinating",
+      "Blood in urine",
+      "Nausea or vomiting",
+      "Frequent urge to urinate",
+      "Cloudy or foul-smelling urine",
+      "Lower abdominal pain"
+    ],
+    "prevention": [
+      "Drink plenty of water",
+      "Limit salt intake",
+      "Reduce oxalate-rich foods",
+      "Limit sugary drinks",
+      "Avoid excessive animal protein",
+      "Maintain healthy weight"
+    ],
+    "remedies": [
+      "Drink plenty of water to flush stones",
+      "Pain relievers as prescribed",
+      "Warm compress on painful area",
+      "Lemon water to help break stones",
+      "Medical treatment for large stones",
+      "Seek urgent help if severe pain or fever occurs"
+    ]
+  }
+},
+"ckd": {
+  "en": {
+    "what": "Chronic Kidney Disease (CKD) is a long-term condition where the kidneys gradually lose their ability to filter waste and excess fluid from the blood. It can progress over time and may lead to kidney failure.",
+    "symptoms": [
+      "Swelling in legs, ankles, or feet",
+      "Fatigue",
+      "Nausea",
+      "Loss of appetite",
+      "Decreased urine output",
+      "Shortness of breath",
+      "Muscle cramps",
+      "Dark or foamy urine"
+    ],
+    "prevention": [
+      "Control blood pressure",
+      "Manage diabetes effectively",
+      "Avoid excessive salt intake",
+      "Drink adequate water",
+      "Maintain healthy weight",
+      "Avoid smoking and alcohol",
+      "Regular kidney function check-ups",
+      "Limit use of painkillers like NSAIDs"
+    ],
+    "remedies": [
+      "Follow doctor-prescribed medications",
+      "Low-salt and kidney-friendly diet",
+      "Control blood sugar and blood pressure",
+      "Drink fluids as advised by doctor",
+      "Avoid high-protein foods if recommended",
+      "Avoid alcohol and smoking",
+      "Seek medical help if swelling or symptoms worsen"
+    ]
+  }
+},
+"arthritis": {
+  "en": {
+    "what": "Arthritis is a condition that causes inflammation and stiffness in the joints, leading to pain and reduced movement. It commonly affects the knees, hands, hips, and spine.",
+    "symptoms": [
+      "Joint pain",
+      "Joint swelling",
+      "Stiffness (especially in the morning)",
+      "Reduced range of motion",
+      "Warmth or redness around joints",
+      "Fatigue",
+      "Difficulty walking or moving joints"
+    ],
+    "prevention": [
+      "Maintain a healthy weight",
+      "Regular exercise and stretching",
+      "Avoid joint injuries",
+      "Balanced diet rich in calcium and vitamin D",
+      "Correct posture",
+      "Avoid repetitive joint strain"
+    ],
+    "remedies": [
+      "Gentle exercise and stretching",
+      "Warm compress for stiffness",
+      "Cold compress for swelling",
+      "Pain relievers as prescribed",
+      "Physiotherapy",
+      "Use supportive braces if recommended",
+      "Seek medical help if pain worsens"
+    ]
+  }
+},
+"migraine": {
+  "en": {
+    "what": "Migraine is a neurological condition that causes intense, throbbing headaches, often accompanied by nausea, sensitivity to light and sound, and visual disturbances. Attacks can last from hours to days.",
+    "symptoms": [
+      "Severe headache (usually on one side)",
+      "Nausea or vomiting",
+      "Sensitivity to light",
+      "Sensitivity to sound",
+      "Visual disturbances (aura)",
+      "Blurred vision",
+      "Fatigue",
+      "Dizziness"
+    ],
+    "prevention": [
+      "Avoid known triggers (stress, certain foods, lack of sleep)",
+      "Maintain regular sleep schedule",
+      "Stay hydrated",
+      "Eat meals on time",
+      "Manage stress",
+      "Limit screen exposure",
+      "Avoid loud noises and bright lights"
+    ],
+    "remedies": [
+      "Rest in a dark, quiet room",
+      "Drink plenty of water",
+      "Cold or warm compress on head or neck",
+      "Pain relievers as prescribed",
+      "Caffeine in small amounts may help",
+      "Avoid strong smells and lights",
+      "Seek medical help for frequent or severe migraines"
+    ]
+  }
+},
+"epilepsy": {
+  "en": {
+    "what": "Epilepsy is a neurological disorder in which abnormal brain activity causes repeated seizures. Seizures may involve uncontrolled movements, loss of awareness, or unusual behavior.",
+    "symptoms": [
+      "Recurrent seizures",
+      "Jerking movements",
+      "Loss of consciousness",
+      "Confusion after a seizure",
+      "Staring spells",
+      "Unusual sensations",
+      "Loss of awareness",
+      "Temporary breathing difficulty"
+    ],
+    "prevention": [
+      "Take medications regularly",
+      "Avoid flashing lights if sensitive",
+      "Manage stress",
+      "Get enough sleep",
+      "Avoid alcohol and drugs",
+      "Wear protective gear to prevent injury",
+      "Regular medical check-ups"
+    ],
+    "remedies": [
+      "Take doctor-prescribed anti-seizure medications",
+      "Ensure adequate sleep",
+      "Stay calm during a seizure",
+      "Lay person on their side during a seizure",
+      "Remove dangerous objects nearby",
+      "Do NOT put anything in the mouth",
+      "Seek medical help for prolonged seizures"
+    ]
+  }
+},
+"pcos": {
+  "en": {
+    "what": "PCOS (Polycystic Ovary Syndrome) is a hormonal disorder in women where the ovaries produce excess male hormones, leading to irregular periods, cysts in ovaries, and metabolic issues.",
+    "symptoms": [
+      "Irregular periods",
+      "Acne",
+      "Weight gain",
+      "Excess facial or body hair",
+      "Hair thinning",
+      "Infertility issues",
+      "Darkening of skin in neck or armpits",
+      "Mood swings"
+    ],
+    "prevention": [
+      "Maintain a healthy weight",
+      "Exercise regularly",
+      "Balanced and nutritious diet",
+      "Reduce sugar and processed foods",
+      "Manage stress",
+      "Regular medical check-ups"
+    ],
+    "remedies": [
+      "Lifestyle changes (diet + exercise)",
+      "Take doctor-prescribed medications",
+      "Hormonal treatment if advised",
+      "Maintain healthy weight",
+      "Reduce sugar intake",
+      "Seek medical help for fertility concerns"
+    ]
+  }
+},
+"dehydration": {
+  "en": {
+    "what": "Dehydration occurs when the body loses more fluids than it takes in, leading to insufficient water for normal body functions. It can result from diarrhea, vomiting, excessive sweating, or inadequate fluid intake.",
+    "symptoms": [
+      "Dry mouth and throat",
+      "Thirst",
+      "Dark yellow urine",
+      "Dizziness",
+      "Headache",
+      "Fatigue",
+      "Low urine output",
+      "Dry skin",
+      "Rapid heartbeat (severe cases)"
+    ],
+    "prevention": [
+      "Drink enough water daily",
+      "Increase fluids during hot weather",
+      "Drink ORS during diarrhea or vomiting",
+      "Avoid excessive alcohol and caffeine",
+      "Take breaks and hydrate during exercise",
+      "Eat hydrating foods like fruits"
+    ],
+    "remedies": [
+      "Drink plenty of water",
+      "ORS to replace lost salts and fluids",
+      "Coconut water or electrolyte drinks",
+      "Avoid sugary or caffeinated drinks",
+      "Rest in a cool place",
+      "Seek medical help if severe dehydration occurs"
+    ]
+  }
+},
+"malnutrition": {
+  "en": {
+    "what": "Malnutrition occurs when the body does not receive enough essential nutrients, leading to weakness, weight loss, and increased risk of illness. It can result from poor diet, digestive problems, or chronic disease.",
+    "symptoms": [
+      "Weight loss",
+      "Weakness",
+      "Fatigue",
+      "Frequent infections",
+      "Slow growth in children",
+      "Hair loss",
+      "Dry skin",
+      "Swelling in legs or feet (severe cases)"
+    ],
+    "prevention": [
+      "Eat a balanced and nutritious diet",
+      "Include protein-rich foods",
+      "Ensure adequate vitamins and minerals",
+      "Improve hygiene and sanitation",
+      "Breastfeeding for infants",
+      "Regular health check-ups",
+      "Treat underlying diseases"
+    ],
+    "remedies": [
+      "Nutrient-rich foods (eggs, milk, vegetables, fruits)",
+      "Protein supplements if advised",
+      "Vitamin and mineral supplements",
+      "Treat underlying infections",
+      "Adequate rest",
+      "Medical supervision for severe cases"
+    ]
+  }
+},
+"heat_stroke": {
+  "en": {
+    "what": "Heat stroke is a severe condition caused by prolonged exposure to high temperatures or strenuous physical activity in hot environments, leading to the body's inability to regulate temperature.",
+    "symptoms": [
+      "High body temperature",
+      "Hot and dry skin",
+      "Confusion or dizziness",
+      "Headache",
+      "Rapid heartbeat",
+      "Nausea or vomiting",
+      "Seizures (severe cases)",
+      "Loss of consciousness"
+    ],
+    "prevention": [
+      "Stay hydrated",
+      "Avoid direct sunlight during peak heat",
+      "Wear light and loose clothing",
+      "Use hat or umbrella outdoors",
+      "Take breaks in shaded or cool areas",
+      "Avoid strenuous activity in hot weather",
+      "Use fans or cooling devices"
+    ],
+    "remedies": [
+      "Move to a cool or shaded place immediately",
+      "Drink water or ORS",
+      "Apply cold compress or wet cloth",
+      "Fan the person to cool down",
+      "Seek urgent medical help",
+      "Do NOT give fluids if unconscious",
+      "Hospital treatment may be required"
+    ]
+  }
+},
+"snake_bite": {
+  "en": {
+    "what": "A snake bite occurs when a snake injects venom into the body, which can affect the nervous system, blood, or tissues. Not all snakes are venomous, but venomous bites can be life-threatening and require immediate treatment.",
+    "symptoms": [
+      "Swelling and pain at the bite site",
+      "Bleeding or bruising",
+      "Nausea or vomiting",
+      "Weakness or dizziness",
+      "Numbness or tingling",
+      "Difficulty breathing (severe cases)",
+      "Paralysis (some snake venoms)",
+      "Blurred vision"
+    ],
+    "prevention": [
+      "Avoid walking in tall grass or bushes",
+      "Wear shoes outdoors, especially at night",
+      "Use a flashlight in dark areas",
+      "Do not handle or provoke snakes",
+      "Keep surroundings clean to prevent rodents",
+      "Seal holes and gaps in homes"
+    ],
+    "remedies": [
+      "Keep the person calm and still",
+      "Immobilize the affected limb",
+      "Remove tight clothing or jewelry",
+      "Seek emergency medical help immediately",
+      "Keep the bite area below heart level",
+      "Do NOT suck the venom",
+      "Do NOT tie a tourniquet",
+      "Do NOT apply ice or cut the wound",
+      "Hospital treatment with antivenom may be required"
+    ]
+  }
+},
+"food_poisoning": {
+  "en": {
+    "what": "Food poisoning occurs when a person eats food contaminated with bacteria, viruses, or toxins. It commonly happens due to improper food handling, storage, or unhygienic preparation.",
+    "symptoms": [
+      "Vomiting",
+      "Diarrhea",
+      "Stomach pain or cramps",
+      "Fever",
+      "Nausea",
+      "Weakness",
+      "Dehydration"
+    ],
+    "prevention": [
+      "Wash hands before eating or cooking",
+      "Avoid stale or spoiled food",
+      "Drink clean and safe water",
+      "Cook food thoroughly",
+      "Avoid street food in unhygienic places",
+      "Store food properly in refrigeration"
+    ],
+    "remedies": [
+      "Drink ORS to prevent dehydration",
+      "Drink plenty of clean water",
+      "Eat light foods like rice, bananas, toast",
+      "Rest well",
+      "Avoid oily, spicy, and dairy foods",
+      "Seek medical help if symptoms persist or worsen"
+    ]
+  }
+},
+"skin_infections": {
+  "en": {
+    "what": "Skin infections occur when bacteria, fungi, or viruses enter the skin, causing irritation and inflammation. Common types include fungal infections, bacterial infections like cellulitis, and viral infections like herpes.",
+    "symptoms": [
+      "Redness or rash",
+      "Itching",
+      "Swelling",
+      "Warmth in the affected area",
+      "Blisters or pus-filled bumps",
+      "Dry or flaky skin",
+      "Pain or tenderness"
+    ],
+    "prevention": [
+      "Maintain proper hygiene",
+      "Keep skin dry and clean",
+      "Avoid sharing towels, razors, or clothing",
+      "Wear breathable clothing",
+      "Treat wounds promptly",
+      "Avoid scratching affected areas",
+      "Keep nails trimmed and clean"
+    ],
+    "remedies": [
+      "Wash the area with mild soap and water",
+      "Apply antiseptic or antifungal creams",
+      "Keep the area dry and uncovered",
+      "Use warm compress for pain relief",
+      "Avoid scratching to prevent worsening",
+      "Seek medical care if infection spreads or pus forms",
+      "Antibiotics or antifungals may be required for severe cases"
+    ]
   }
 }
 
 
-
+}
