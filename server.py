@@ -41,7 +41,7 @@ GREET_KEYWORDS = {
 
 GREET_MESSAGE = {
     "en": (
-        "👋 Hello! I'm *Medxai*, your offline health assistant.\n\n"
+        "👋 Hello! I'm *Medxai*, your whatsapp health assistant.\n\n"
        
     ),
     "hi": (
