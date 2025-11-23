@@ -23,7 +23,7 @@ app = FastAPI()
 if os.path.isdir("public"):
     app.mount("/public", StaticFiles(directory="public"), name="public")
 
-# Load FAQ DB (40-disease multilingual json)
+# Load FAQ DB 
 FAQ_PATH = "faq.json"
 FAQ = {}
 if os.path.exists(FAQ_PATH):
@@ -165,7 +165,7 @@ def search_faq(text: str, lang: str = "en") -> str | None:
         title_map = {
             "what": "क्या है",
             "symptoms": "लक्षण",
-            "prevention": "बचाव",
+            "prevention": "बچाव",
             "remedies": "उपचार / घरेलू उपाय"
         }
 
@@ -204,6 +204,23 @@ def process_message(text: str, lang: str = "en") -> dict:
             return {
                 "type": "greeting",
                 "answer": GREET_MESSAGE.get(lang, GREET_MESSAGE["en"])
+            }
+
+    # 0.5) Thank you messages
+    THANK_KEYWORDS = {
+        "en": ["thank", "thanks", "thank you", "thx", "ty"],
+        "hi": ["dhanyavad", "धन्यवाद", "shukriya", "शुक्रिया"]
+    }
+
+    for t in THANK_KEYWORDS.get(lang, []):
+        if t in lower:
+            thank_reply = {
+                "en": "😊 You're welcome! Let me know if you need more health information.",
+                "hi": "😊 आपका स्वागत है! यदि आपको और स्वास्थ्य जानकारी चाहिए, तो बताएं।"
+            }
+            return {
+                "type": "thanks",
+                "answer": thank_reply.get(lang, thank_reply["en"])
             }
 
     # 1) FAQ (40-disease database using new JSON format)
